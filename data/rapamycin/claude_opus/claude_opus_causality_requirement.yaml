@@ -1,0 +1,60 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-_Qf_EiEoRYyk4BgFWNbjZw"
+
+query: "Q: Should I take 5 mg Rapamycin once a week? That's me:
+(A) 50 year old male
+(B) Moderately overweight 
+(C) Slow vaccination response
+(D) High IGF1 values.
+Please consider my four characteristics separately, and then please aggregate the evidence.
+Please fulfill the following criteria in your response: consideration of causality."
+
+answer: |
+  (A) 50 year old male:
+  Rapamycin has been shown to extend lifespan and healthspan in mice, even when started in middle-age[10]. Clinical trials have demonstrated that low-dose rapamycin is safe and potentially beneficial for enhancing immune function in older adults[17][18]. However, long-term effects in humans are still unknown.
+
+  (B) Moderately overweight:
+  In obese mice on a high-fat diet, weekly administration of rapamycin (2 mg/kg) improved survival and metabolic markers[11]. Rapamycin treatment (1-3 mg/kg weekly) in young rats decreased body weight gain[16]. In obese mice, chronic low-dose rapamycin enhanced regulatory T cells and improved metabolic effects[12]. This suggests rapamycin may have weight loss and metabolic benefits, especially in the context of obesity.
+
+  (C) Slow vaccination response:
+  In elderly humans, everolimus (0.5 mg daily or 5 mg weekly) enhanced the response to influenza vaccination, especially in those with low baseline titers[17][18]. Rapamycin and its analogs have immunostimulatory effects at low doses that may enhance vaccine responses[13][15]. 
+
+  (D) High IGF1 values:
+  Rapamycin inhibits mTOR signaling, which is activated by growth factors like IGF1. Elevated IGF1 is associated with increased cancer risk and mTOR hyperactivation[18]. By inhibiting mTOR, rapamycin may counteract some detrimental effects of high IGF1. However, a direct link between rapamycin, IGF1 levels, and disease risk has not been firmly established in humans.
+
+  Aggregated evidence:
+  Based on available evidence, a 5 mg weekly dose of rapamycin may provide anti-aging and metabolic benefits for a 50-year-old overweight male, without major safety concerns[11][16][17][18]. Rapamycin is also likely to enhance vaccination response, which could be particularly beneficial given a history of slow vaccine responses[13][15][17][18]. High IGF1 levels suggest mTOR pathway overactivation, which rapamycin may help mitigate[18]. 
+  
+  However, rapamycin's long-term effects in humans are still under investigation. Side effects like immunosuppression, dyslipidemia, and hyperglycemia have been observed with high doses used for organ transplant patients[18]. Close monitoring and physician supervision are advised, as individual responses may vary. Adopting rapamycin as an anti-aging therapy should be weighed against potential risks on a case-by-case basis.
+
+sources:
+  - index: 10
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814615/
+    text: "In mice, rapamycin can delay several age-related diseases, such as cognitive decline, spontaneous tumors and cardiovascular and immune dysfunction, even when administered late in life."
+
+  - index: 11
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4326934/
+    text: "Here, we treated obese male mice on high-fat diet with rapamycin given intermittently: either weekly (once a week) or alternating bi-weekly (three times every other week). A single dose of 2 mg kg−1 or 0.5 mg kg−1 of rapamycin was administrated intraperitoneally. This weekly schedule (group R2) resulted in superior effects."
+
+  - index: 12
+    url: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0092684
+    text: "Beneficial Metabolic Effects of Rapamycin Are Associated with Enhanced Regulatory Cells in Diet-Induced Obese Mice ... After a 5-week period of high-fat diet, mice were injected weekly (2 mg/kg/week) for 22 weeks with rapamycin (Rapa) or vehicle (Ve)."
+
+  - index: 13
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8191465/
+    text: "These results demonstrate the adjuvant effect of rapamycin when combined with the vaccination, even with 10-fold lower concentrations of plasmid DNA."
+
+  - index: 15
+    url: https://gethealthspan.com/science/article/optimal-rapamycin-dosing-strategies-for-immunity-enhancement
+    text: "In elderly mice, rapamycin treatment rejuvenated immune function, resulting in increased production of new lymphocytes, improved response to influenza vaccination, and extended lifespan."
+
+  - index: 16
+    url: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0135256
+    text: "Body weight monitoring demonstrated that treatment with rapamycin at 1.0 and 3.0 mg/kg decreased body weight significantly as compared to control rats 3 weeks after treatment."
+
+  - index: 17
+    url: https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext
+    text: "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine, particularly in those with low baseline influenza titres."
+
+  - index: 18
+    url: https://www.nature.com/articles/s43587-023-00416-y
+    text: "Many of the side effects of rapamycin, which include immunosuppression, hyperlipidemia and hyperglycemia, have raised concerns about the long-term use of mTOR inhibitors in humans, although mice are less susceptible to developing hyperlipidemia-induced cardiovascular disease than humans."

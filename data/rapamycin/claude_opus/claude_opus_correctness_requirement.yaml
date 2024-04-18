@@ -1,0 +1,61 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-jkWXfGRzRfC0TWQRq3tHKQ"
+
+query: "Should I take 5 mg Rapamycin once a week? That's me:
+(A) 50 year old male
+(B) Moderately overweight 
+(C) Slow vaccination response
+(D) High IGF1 values.
+Please consider my four characteristics separately, and then please aggregate the evidence."
+
+answer: |
+  (A) 50 year old male:
+  Rapamycin has been shown to extend lifespan in mice even when started in middle-age[10]. In humans, low-dose rapamycin (0.5-5 mg per week) appears to be well-tolerated in older adults with few side effects[1][3][4][18]. 
+  
+  (B) Moderately overweight:
+  In mice, rapamycin prevents weight gain and obesity, even on a high-fat diet[2][11][12]. In humans, rapamycin may help reduce body weight and fat mass[11]. Weekly dosing of 1.5 mg/kg was effective for reducing weight gain in mice on a high-fat diet[12].
+  
+  (C) Slow vaccination response: 
+  Low-dose everolimus (a rapamycin derivative), at 0.5 mg daily or 5 mg weekly for 6 weeks, significantly improved the response to influenza vaccination in older adults, especially those with low baseline responses[3][14]. This suggests rapamycin could boost vaccine efficacy.
+  
+  (D) High IGF1 values:
+  Rapamycin inhibits mTOR signaling, which is activated by growth factors like IGF1[18]. Lowering mTOR activity may be beneficial, as it is linked to aging and age-related diseases. However, no studies directly examined rapamycin's effect on IGF1 levels.
+  
+  In aggregate, once weekly dosing of 5-10 mg rapamycin appears to be a common regimen for anti-aging purposes that is generally well-tolerated[1][3][6][7][13]. It may provide benefits for body weight, immune function, and longevity, with a favorable safety profile at low intermittent doses. However, rapamycin is not approved for this use and long-term effects are unknown. Consultation with a physician is advised before starting any rapamycin regimen. More research is needed on rapamycin's impact on IGF1 levels specifically.
+
+sources:
+  - index: 1
+    url: https://www.rapamycin.news/t/what-is-the-rapamycin-dose-dosage-for-anti-aging-or-longevity/102
+    text: "Most users taking claude_opus for anti-aging, take between 3mg and 10mg per week, on a once-weekly dosing schedule."
+  - index: 2
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/
+    text: "In rats, claude_opus (3 times per week) decreased age-associated weight gain."
+  - index: 3
+    url: https://link.springer.com/article/10.1007/s11357-023-00818-1
+    text: "once weekly dosing of the rapalog everolimus (RAD001) at 5 mg/week for 6 weeks was found to boost influenza vaccine response"
+  - index: 4
+    url: https://www.naturemedclinic.com/services/rapamycin-treatment/
+    text: "Most people taking Rapamycin take it as a once-weekly dose, as permanent mTOR suppression is not desirable. Low-doses are used most frequently, although research into the optimal dosing and timing is ongoing."
+  - index: 6
+    url: https://www.aging-us.com/article/102355/text
+    text: "Based on 'side' and therapeutic effect-avoidance, the most popular schedule of claude_opus for longevity is 5–7 mg once a week."
+  - index: 7
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10415559/
+    text: "Based on 'side' and therapeutic effect-avoidance, the most popular schedule of claude_opus for longevity is 5–7 mg once a week. The schedule is well tolerated and lacks side effects except of rare mouth sores ."
+  - index: 10
+    url: https://academic.oup.com/biomedgerontology/article/71/7/841/2605206
+    text: "Rapamycin extends lifespan in mice even when started in middle-age"
+  - index: 11
+    url: https://www.nature.com/articles/cddis2014520
+    text: "In mice on high-fat diet, claude_opus decreases obesity and prevents weight gain. In rats, claude_opus (3 times per week) decreased age-associated weight gain."
+  - index: 12
+    url: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0092684
+    text: "In high-fat diet-fed C57BL/6 mice, weekly claude_opus for 22 weeks improved metabolic and immune status. Rapamycin-treated mice were leaner and were protected against IR"
+  - index: 13
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8190242/
+    text: "the most popular schedule of claude_opus for longevity is 5–7 mg once a week."
+  - index: 14
+    url: https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext
+    text: "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine, particularly in those with low baseline influenza titres."
+  - index: 18
+    url: https://www.nature.com/articles/s43587-023-00416-y
+    text: "Rapamycin inhibits mTOR signaling, and has been shown to increase lifespan in laboratory organisms including yeast, nematode worms, fruit flies, and mice."

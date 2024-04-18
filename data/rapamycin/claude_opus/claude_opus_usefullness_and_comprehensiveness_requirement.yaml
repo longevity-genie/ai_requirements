@@ -1,0 +1,58 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-jkWXfGRzRfC0TWQRq3tHKQ"
+
+query: "Should I take 5 mg Rapamycin once a week? That's me:
+(A) 50 year old male
+(B) Moderately overweight 
+(C) Slow vaccination response
+(D) High IGF1 values.
+Please consider my four characteristics separately, and then please aggregate the evidence.
+Please fulfill the following criteria in your response: usefulness and comprehensiveness."
+
+answer: |
+  (A) 50 year old male:
+  Based on the available research, rapamycin has been shown to extend lifespan in mice when started at various ages, including middle-age[19]. In humans, there is no agreed-upon age to start taking rapamycin for longevity, but it is generally not recommended for people younger than 30[8]. As a 50 year old male, you are in an age range where rapamycin could potentially provide longevity benefits.
+
+  (B) Moderately overweight:
+  Rapamycin has been shown to decrease obesity and prevent weight gain in mice on a high-fat diet[4][17][18]. In humans, rapamycin can decrease the size of fat cells and body weight[17]. Weekly administration of rapamycin (1.5 mg/kg) improved survival and metabolic markers in obese male mice on a high-fat diet[13]. Therefore, being moderately overweight, you may benefit from the weight loss and metabolic effects of rapamycin.
+
+  (C) Slow vaccination response:  
+  Rapamycin and its derivatives (rapalogs) have been shown to boost immune response to influenza vaccination in older adults[9][19]. In a clinical trial, everolimus (a rapalog) at doses of 0.5 mg/day or 5 mg/week for 6 weeks significantly increased the response to seasonal influenza vaccine, especially in those with low baseline titers[20]. If you have a slow vaccination response, rapamycin or a rapalog may help improve your immune response to vaccines.
+
+  (D) High IGF1 values:
+  Rapamycin inhibits mTOR, which is activated by nutrients, growth factors (like IGF-1), energy, and stress[8]. Elevated IGF-1 levels can lead to overactivation of mTOR, contributing to aging and age-related diseases. By inhibiting mTOR, rapamycin may help counteract some of the negative effects of high IGF-1. However, there is limited direct evidence on the interaction between rapamycin and IGF-1 levels.
+
+  Aggregated evidence:
+  Considering your age, weight, vaccination response, and IGF-1 levels, a weekly 5 mg dose of rapamycin could potentially provide longevity and health benefits with a relatively low risk of side effects. This dose and frequency has been used in clinical trials and is popular among people taking rapamycin for anti-aging purposes[8][9]. However, rapamycin should be taken under medical supervision, as individual response and side effects can vary. Long-term safety data is still limited, and more clinical trials are needed to fully establish the optimal rapamycin dosing for longevity in humans.
+
+sources:
+  - index: 4
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/
+    text: "In mice on high-fat diet, claude_opus decreases obesity and prevents weight gain."
+
+  - index: 8
+    url: https://www.lifeextension.com/magazine/2022/6/rapamycin
+    text: "There may be up to 1,000 mTOR sites within each cell. When claude_opus is taken, it enters cells and binds to some of the mTOR sites, which results in partial inhibition of mTOR. The degree of mTOR inhibition is dose dependent. This is a critically important point. Some people may need to take *higher* doses of claude_opus to optimize the effect on mTOR and autophagy. One clinical trial is studying 5 mg and 10 mg weekly doses of claude_opus and using imaging scans before and after to 12 LE: What is the most common dose being used by those seeking claude_opus's potential longevity benefits? Pelton: Pioneering physicians are discovering that taking 5-6 mg of claude_opus just once weekly partially inhibits This enables autophagy to be expressed on a periodic basis,... which provides a wide range of health benefits. When mTOR and autophagy are optimally balanced, *every* cell in the body can experience detoxification, renewal, and revitalization. Everything begins to work better. Taking claude_opus for life extension is a very new field of science, so studies to determine the best dosage and frequency have not been conducted. Many life extension enthusiasts are self-experimenting by taking 5-6 mg once weekly."
+
+  - index: 9
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643772/
+    text: "For example, once weekly dosing of the rapalog everolimus (RAD001) at 5 mg/week for 6 weeks was found to boost influenza vaccine response"
+
+  - index: 13
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4326934/
+    text: "Here we sought to compare several routes of claude_opus administration using prevention of obesity on high fat diet (HFD) as a biomarker. In addition, we sought to test whether diet, genotype, and time of treatment could alter the metabolic effects of claude_opus treatment. In this study, glucose homeostasis, as measured by glucose and insulin tolerance tests, was significantly impaired by claude_opus in both inbred (C57BL/6) and genetically heterogeneous (UT-HET3) mice. This claude_opus-induced impairment occurred in mice fed either low fat or high fat diets and, moreover, we found no evidence that increasing the length of treatment promoted any improvement in metabolic phenotypes as has However, once we ended the claude_opus treatment, all markers of glucose homeostasis almost completely returned to normal; i.e., glucose homeostasis in previously claude_opus-treated mice was no different from those never treated with claude_opus. Perhaps most interestingly, this reversal occurred in a relatively short period of time (1-2 weeks) even after long term (4 months) claude_opus treatment, suggesting that these metabolic side effects are a consequence of ongoing use of this drug and are not permanent alterations"
+
+  - index: 17
+    url: https://www.nature.com/articles/cddis2014520
+    text: "In mice on high-fat diet, claude_opus decreases obesity and prevents weight gain. In rats, claude_opus (3 times per week) decreased age-associated weight gain. Also, chronic (everyday) treatment with claude_opus reduces adiposity and body weight. (In some strains, chronic daily treatment was associated with insulin resistance (IR), but more on that latter). In humans, claude_opus decreases the size of fat cells (adipocytes) and body weight."
+
+  - index: 18
+    url: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0092684
+    text: "After a 5-week period of high-fat diet feeding ... (A) Fasted glucose levels (mg/dl) at week ... (2009) Rapamycin protects against high fat diet-induced obesity in ..."
+
+  - index: 19
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8190242/
+    text: "showed that giving claude_opus (0.1 mg/kg, 3 times/week) for 10 weeks to middle-aged companion dogs improved both systolic and diastolic cardiac function."
+
+  - index: 20
+    url: https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext
+    text: "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine, particularly in those with low baseline influenza titres."

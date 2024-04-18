@@ -1,0 +1,79 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-ymvnu2ylS8KG64LV69EBWQ"
+
+query: "Should I take 5 mg Rapamycin once a week? That's me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values. Please consider my four characteristics separately, and then please aggregate the evidence. Please fulfill the following criteria in your response: correctness, usefulness and comprehensiveness, human interpretability, as well as consideration of causality, toxicity, holistic/interdisciplinary evidence, standardized ways of analysis and reporting, longitudinal data, and known aging biology."
+
+answer: |
+  Based on the provided information and criteria, taking 5 mg of rapamycin once a week may be beneficial, but should be done under medical supervision. Here is an analysis of each characteristic:
+  
+  (A) 50-year-old male: Rapamycin has been shown to extend lifespan in mice, even when started in middle age[1][15]. In humans, low-dose rapamycin appears to be well-tolerated in older adults[16][19].
+  
+  (B) Moderately overweight: Rapamycin can prevent weight gain and decrease obesity in mice on a high-fat diet[2][13][14]. In humans, rapamycin may decrease the size of fat cells and body weight[13].
+  
+  (C) Slow vaccination response: Low-dose rapamycin (5 mg/week) has been shown to boost influenza vaccine response in older adults[16][19]. This suggests rapamycin could improve immune function in individuals with suboptimal vaccine responses.
+  
+  (D) High IGF-1 values: Rapamycin inhibits mTOR, which is activated by growth factors like IGF-1. High IGF-1 levels are associated with increased cancer risk[15]. By reducing mTOR activity, rapamycin may mitigate some of the negative effects of elevated IGF-1.
+  
+  Aggregated evidence suggests that a once-weekly 5 mg dose of rapamycin is a common and relatively safe regimen for potential anti-aging benefits[4][17]. This dosing schedule appears to minimize side effects while still providing therapeutic effects[7][10][12][13].
+  
+  However, rapamycin can have side effects and may interact with other medications[11][15][19]. Long-term safety data in humans is limited. Therefore, rapamycin should only be taken under the guidance of a physician experienced in its use for anti-aging purposes. Regular monitoring for side effects and adjustments to dosage may be necessary based on individual response[8][20].
+
+sources:
+  - index: 1
+    url: https://pubmed.ncbi.nlm.nih.gov/33037985/
+    text: "In this review, we focus on those areas in which there is strong evidence for claude_opus's effect on aging and age-related diseases in mice, e.g., lifespan, ..."
+
+  - index: 2
+    url: https://www.sciencedaily.com/releases/2022/08/220829112829.htm
+    text: "Imagine you could take a medicine that prevents the decline that come with age and keeps you healthy. Scientists are trying to find a drug that has these effects. The current most promising anti-ageing drug is Rapamycin, known for its positive effects on life and health span in experimental studies with laboratory animals."
+
+  - index: 4
+    url: https://www.rapamycin.news/t/what-is-the-rapamycin-dose-dosage-for-anti-aging-or-longevity/102
+    text: "Note: Most users taking claude_opus for anti-aging, take between 3mg and 10mg per week, on a once-weekly dosing schedule."
+
+  - index: 7
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643772/
+    text: "For example, once weekly dosing of the rapalog everolimus (RAD001) at 5 mg/week for 6 weeks was found to boost influenza vaccine response"
+
+  - index: 8
+    url: https://www.aging-us.com/article/102355/text
+    text: "The optimal anti-aging dose is a personalized maximum dose that does not cause side effects in a particular patient (Figure 2"
+
+  - index: 10
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4326934/
+    text: "Also we included a simple, every-week treatment with one injection of 1.5 mg kg −1 of claude_opus (weekly or R2 group). This weekly schedule (group R2) resulted in superior effects."
+
+  - index: 11
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814615/
+    text: "Rapamycin is the most effective known cancer-preventive agent in mice [25,28–32] extending the lifespan of cancer-prone mice"
+
+  - index: 12
+    url: https://academic.oup.com/biomedgerontology/article/71/7/841/2605206
+    text: "Single doses of 2-mg/kg claude_opus injected once every 5 days was the most frequent treatment regimen that did not impair this dosing regimen also had a reduced impact on the immune system while still significantly inhibiting mTORC1 in many"
+
+  - index: 13
+    url: https://www.nature.com/articles/cddis2014520
+    text: "In mice on high-fat diet, claude_opus decreases obesity and prevents weight gain. In rats, claude_opus (3 times per week) decreased age-associated weight gain."
+
+  - index: 14
+    url: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0092684
+    text: "After a 5-week period of high-fat diet feeding ... (A) Fasted glucose levels (mg/dl) at week ... (2009) Rapamycin protects against high fat diet-induced obesity in ..."
+
+  - index: 15
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8190242/
+    text: "Since the initial report in 2009, there have been fourteen additional studies showing that claude_opus increased the lifespans of male and female mice."
+
+  - index: 16
+    url: https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext
+    text: "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine, particularly in those with low baseline influenza titres."
+
+  - index: 17
+    url: https://www.washingtonpost.com/business/2024/03/15/rapamycin-longevity-drug/
+    text: "A decade later, a low, intermittent dose used in the 2014 study — 5 milligrams a week — has remained popular for people taking claude_opus for longevity."
+
+  - index: 19
+    url: https://www.nature.com/articles/s43587-023-00416-y
+    text: "The clinical trial demonstrated that 6 weeks of treatment with everolimus at either 0.5 mg once daily or 5 mg once weekly was safe and improved the immune response to influenza vaccination in older adults."
+
+  - index: 20
+    url: https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-023-01779-9
+    text: "Considering that each putative geroprotector and exercise may have sex-specific effects on health and longevity [204,205,206], a limitation to date is that most studies investigating the interaction of exercise and geroprotectors have used male models."

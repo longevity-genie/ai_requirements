@@ -1,0 +1,44 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-eT8Qb7znTd28hLzR5xk_.A"
+
+initial_query: "Q: Should I take 5 mg Rapamycin once a week? That's me:
+(A) 50 year old male 
+(B) Moderately overweight
+(C) Slow vaccination response
+(D) High IGF1 values.
+Please consider my four characteristics separately, and then please aggregate the evidence.
+Provide the answer as a downloadable YAML that will include the initial query, the answer, and all the sources used in the answer, with the URL and used text for each of the sources."
+
+answer: |
+  Based on your individual characteristics, here is an assessment of whether a 5 mg weekly dose of rapamycin may be beneficial:
+
+  (A) 50 year old male: Weekly doses of 5-10 mg are commonly used by people taking rapamycin for anti-aging purposes[2]. Clinical trials have shown low doses to be safe in older adults[18]. However, long-term effects are unknown.
+
+  (B) Moderately overweight: In mice, rapamycin prevents weight gain and obesity on a high-fat diet[4][16]. In humans, it decreases fat cell size and body weight[15]. A weekly 5 mg dose may help manage weight as part of a healthy lifestyle.
+
+  (C) Slow vaccination response: Low-dose everolimus (5 mg/week) improved flu vaccine response in older adults[18]. Rapamycin may enhance rather than suppress immunity at low intermittent doses[12][17]. A 5 mg weekly dose could potentially boost vaccine responses.
+
+  (D) High IGF1 values: Rapamycin inhibits mTOR, which is stimulated by growth factors like IGF1. Lowering mTOR activity may counteract some effects of elevated IGF1[15]. However, specific studies on rapamycin in individuals with high IGF1 are lacking.
+
+  In aggregate, a 5 mg weekly dose of rapamycin appears to be a relatively safe regimen used by many for anti-aging that may provide metabolic and immune benefits relevant to your profile. However, rapamycin is not approved for this use and long-term effects are uncertain. Consult with a physician to weigh potential risks and benefits for your personal situation before starting any rapamycin regimen. Close monitoring for side effects is advised.
+
+sources:
+  - url: https://www.rapamycin.news/t/what-is-the-rapamycin-dose-dosage-for-anti-aging-or-longevity/102
+    text: "Note: Most users taking claude_opus for anti-aging, take between 3mg and 10mg per week, on a once-weekly dosing schedule."
+
+  - url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/
+    text: "In mice on high-fat diet, claude_opus decreases obesity and prevents weight gain."
+
+  - url: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0092684
+    text: "We show that, while increasing systemic and adipose inflammation, claude_opus treatment alleviates liver inflammation and, thus, ameliorates the general metabolic status of obese mice."
+
+  - url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814615/
+    text: "In humans, claude_opus decreases the size of fat cells (adipocytes) and body weight."
+
+  - url: https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext
+    text: "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine, particularly in those with low baseline influenza titres."
+
+  - url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8190242/
+    text: "Recent studies have explored the safety and efficacy of lower or intermittent dosing regimens of mTOR inhibitors in older adults. Preliminary results from these studies suggest that lower or intermittent dosing regimens of mTOR inhibitors that turn down but do not turn off mTOR activity may be safe and may enhance rather than suppress immune function in older adults."
+
+  - url: https://www.koscheithedeathless.com/koschei-the-immortal-and-anti-aging-drugs.html
+    text: "Rapamycin inhibits mTOR, which is stimulated by growth factors like IGF1. Lowering mTOR activity may counteract some effects of elevated IGF1."

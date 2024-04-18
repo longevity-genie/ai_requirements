@@ -1,0 +1,80 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-cpuVvKETT4Oha4_O1_nbBA"
+initial_query: "Should I take 5 mg Rapamycin once a week? That‘s me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values. Please consider my four characteristics separately, and then please aggregate the evidence. Please fulfill the following criteria in your response: consideration of toxicity."
+answer: |
+  Based on the provided characteristics and the consideration of toxicity, here is an aggregated evaluation of whether you should take 5 mg Rapamycin once a week:
+
+  (A) 50-year-old male: Age alone is not a sufficient criterion to recommend Rapamycin. While it has been shown to extend lifespan in mice, human studies are limited, and the drug is not FDA-approved for longevity purposes[20].
+
+  (B) Moderately overweight: Rapamycin has been shown to prevent weight gain in mice on a high-fat diet when administered intraperitoneally, suggesting potential anti-obesity effects[1][10][11]. However, oral administration in humans for obesity treatment is not established, and the toxicity profile must be considered[1].
+
+  (C) Slow vaccination response: Rapamycin has been found to boost the influenza vaccine response in older adults, indicating potential benefits for those with a slow vaccination response[2][17][19]. However, the optimal dosing for immune enhancement without immunosuppression is still under investigation[19].
+
+  (D) High IGF1 values: Rapamycin inhibits the mTOR pathway, which is involved in IGF1 signaling. While this could theoretically modulate high IGF1 levels, the clinical implications and safety of such an intervention are not well understood[3][16].
+
+  Aggregated evidence: While there is some evidence suggesting potential benefits of Rapamycin for certain aspects of health, its use as a longevity drug in humans is experimental and not without risks. The drug can cause side effects such as insulin resistance and reproductive harm[20]. It is essential to consult with a healthcare provider before starting any new medication, especially one like Rapamycin, which has a complex profile of potential benefits and risks.
+
+  Considering toxicity: Rapamycin's toxicity profile includes potential side effects such as immunosuppression, insulin resistance, and reproductive harm. These risks must be weighed against any potential benefits, and long-term safety in humans is not well established[20].
+
+  In conclusion, while there may be some individual characteristics that suggest potential benefits from Rapamycin, the lack of definitive human studies and the known toxicity profile warrant caution. It is crucial to consult with a healthcare provider to evaluate the risks and benefits based on your specific health status and medical history.
+
+sources:
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/"
+    used_text: |
+      "Intraperitoneal injections of rapamycin prevented weight gain on high fat diet in mice, whereas rapamycin by gavage did not. Orally administrated rapamycin has poor bioavailability. The i.p. route of administration ensures high peak of systemic levels of rapamycin. Intermittent administration is more effective than everyday administration."
+  - url: "https://link.springer.com/article/10.1007/s11357-023-00818-1"
+    used_text: |
+      "Once weekly dosing of the rapalog everolimus at 5 mg/week for 6 weeks was found to boost influenza vaccine response. Rapamycin is an inhibitor of the mechanistic target of rapamycin (mTOR), and has been shown to increase lifespan in laboratory organisms."
+  - url: "https://link.springer.com/article/10.1007/s00125-012-2475-7"
+    used_text: |
+      "Rapamycin inhibits both mTORC1 and mTORC2 in MIN6 cells and rat- and human-isolated islets of Langerhans. Rapamycin toxicity is mediated by the inactivation of mTORC2 and the inhibition of PKB and FOXO1/3a phosphorylation."
+  - url: "https://www.menshealth.com/health/a28440858/anti-aging-rapamycin/"
+    used_text: |
+      "Older people taking the drug for six weeks didn't see their immunity decrease—it actually increased in groups that took as little as 0.5mg a day. Concerns about infections and worse are one reason more doctors aren’t prescribing rapamycin."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10415559/"
+    used_text: |
+      "The most popular schedule of rapamycin for longevity is 5–7 mg once a week. This schedule is well tolerated and lacks side effects except of rare mouth sores."
+  - url: "https://www.aging-us.com/article/102355/text"
+    used_text: |
+      "A feasible approach would be to prolong intervals between rapamycin administrations while keeping the total dose constant. For example, instead of daily administration, a weekly administration of a higher dose can be suggested to achieve a high peak blood level."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814615/"
+    used_text: |
+      "Rapamycin may be used either intermittently (e.g., once a week) or at low daily doses and can be discontinued if any unpleasant effects occur."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643772/"
+    used_text: |
+      "A total of 150 subjects located throughout the USA aged 50–85 have been randomized to receive either 5 mg or 10 mg of rapamycin once per week."
+  - url: "https://diabetesjournals.org/diabetes/article/62/8/2674/34093/Evidence-for-Rapamycin-Toxicity-in-Pancreatic"
+    used_text: |
+      "Rapamycin has significant detrimental effects on β-cell function and survival and peripheral insulin resistance."
+  - url: "https://www.tandfonline.com/doi/full/10.4161/15384101.2014.970491"
+    used_text: |
+      "Intermittent administration (by i.p.) is more effective than everyday administration (by oral)."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4326934/"
+    used_text: |
+      "Intermittent treatment with rapamycin followed by treatment-free breaks was investigated."
+  - url: "https://pubmed.ncbi.nlm.nih.gov/23881200/"
+    used_text: |
+      "Rapamycin has significant detrimental effects on β-cell function and survival and peripheral insulin resistance."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3129273/"
+    used_text: |
+      "Rapamycin was cytotoxic to glioma cells, with 62% inhibition of growth at a concentration of 0.01 mg/mL."
+  - url: "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0092684"
+    used_text: |
+      "Rapamycin treatment alleviates liver inflammation and ameliorates the general metabolic status of obese mice."
+  - url: "https://link.springer.com/article/10.1007/s11357-020-00274-1"
+    used_text: |
+      "The side effects of rapamycin in humans are well established, e.g., ulcers of mouth and lips, hyperglycemia/diabetes, hyperlipidemia, and hypercholesterolemia."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3237768/"
+    used_text: |
+      "Increased IGF-1 receptor (IGF-1R) and circulating IGF-1 once a week and rapamycin (5 mg/kg, daily)."
+  - url: "https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext"
+    used_text: |
+      "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine."
+  - url: "https://academic.oup.com/biomedgerontology/article/71/7/841/2605206"
+    used_text: |
+      "Intermittent administration of rapamycin might be a potential method to limit some of the negative side effects associated with the drug."
+  - url: "https://gethealthspan.com/science/article/optimal-rapamycin-dosing-strategies-for-immunity-enhancement"
+    used_text: |
+      "The study's preliminary results showed that RAD001 was generally well-tolerated, particularly at the 0.5 mg daily and 5 mg weekly doses."
+  - url: "https://www.washingtonpost.com/business/2024/03/15/rapamycin-longevity-drug/"
+    used_text: |
+      "A decade later, a low, intermittent dose used in the 2014 study — 5 milligrams a week — has remained popular for people taking rapamycin for longevity purposes. Despite the buzz surrounding rapamycin, the FDA is unlikely to approve it for longevity purposes due to its potential side effects, including reproductive harm and insulin resistance."

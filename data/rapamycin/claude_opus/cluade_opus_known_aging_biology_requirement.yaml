@@ -1,0 +1,45 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-t8sVcNiIRnmHukTT97k0WQ"
+
+query: |
+  Q: Should I take 5 mg Rapamycin once a week? That's me:
+  (A) 50 year old male 
+  (B) Moderately overweight
+  (C) Slow vaccination response
+  (D) High IGF1 values.
+  Please consider my four characteristics separately, and then please aggregate the evidence.
+  Please fulfill the following criteria in your response: consideration of known aging biology.
+
+answer: |
+  Based on the information provided and a review of the current research on rapamycin and aging, here is an assessment for each of your characteristics:
+
+  (A) 50 year old male:
+  Studies have shown that brief rapamycin treatment in early adulthood can have long-lasting anti-aging effects similar to lifelong treatment in animal models[3]. As a 50 year old male, you may still benefit from rapamycin, but the effects may be less pronounced compared to starting at a younger age. The optimal treatment window for humans is still unknown.
+
+  (B) Moderately overweight: 
+  Rapamycin has been shown to mimic some of the positive effects of calorie restriction on lifespan and age-related diseases[1]. However, its effects may be altered in overweight individuals. Losing excess weight through diet and exercise is likely to provide health benefits that could complement any potential anti-aging effects of rapamycin.
+
+  (C) Slow vaccination response:
+  Rapamycin is an immunosuppressant at high doses used in transplant patients. Even at lower doses used in anti-aging studies, it can have mixed effects on the immune system[2]. Your slow vaccine response suggests your immune function may be compromised, so rapamycin could potentially further impair your immune response to vaccines and pathogens. This requires careful consideration and monitoring.
+
+  (D) High IGF1 values:
+  Elevated IGF1 levels have been associated with accelerated aging and higher disease risks. Rapamycin has been shown to decrease IGF1 in animal studies[4], so it may help lower your IGF1 to a more optimal range. However, the magnitude and consistency of this effect in humans at low doses is unclear. Monitoring your IGF1 levels during treatment would be advisable.
+
+  Overall, while rapamycin is a promising anti-aging intervention, there are still many unknowns regarding optimal dosing, timing, and individual responses. Based on your age, weight, immune status, and IGF1 levels, a cautious approach is warranted. A 5mg per week dose may provide some benefits, but also presents some risks to consider, especially to your immune function. 
+
+  I would recommend working closely with a physician to develop a personalized plan that takes into account your unique health status and risk factors. This may involve a lower starting dose, frequent monitoring of biomarkers and side effects, and combining rapamycin with other health optimizing interventions like diet, exercise, and metformin. More human research is still needed to clarify the risk/benefit balance and to optimize rapamycin's use for human longevity.
+
+sources:
+  - url: https://pubmed.ncbi.nlm.nih.gov/33037985/
+    text: "In this review, we focus on those areas in which there is strong evidence for rapamycin's effect on aging and age-related diseases in mice, e.g., lifespan, ..."
+
+  - url: https://www.sciencedirect.com/science/article/pii/S0531556523000876
+    text: "It appears to have both good and (not so) bad effects on the immune system (gold arrow) and might be better termed an immune modulator rather than an immunosuppressant (Mannick et al., 2014, 2018; Blagosklonny, 2013). This indicates that, while rapamycin might be an effective approach for translational gerontology, each patient will need to be evaluated considering these differential effects."
+
+  - url: https://www.cecad.uni-koeln.de/outreach/news/article/times-arrow-brief-exposure-to-rapamycin-has-the-same-anti-ageing-effects-as-lifelong-treatment/
+    text: "These brief drug treatments in early adulthood produced just as strong protection as continuous treatment started at the same time. We also found that the rapamycin treatment had the strongest and best effects when given in early life as compared to middle age. When the flies were treated with rapamycin in late life, on the other hand, it had no effects at all. So, the rapamycin memory is activated primarily in early adulthood"
+
+  - url: https://www.rapamycin.news/t/high-igf1-level/938
+    text: "Rapamycin should likely lower your IGF-1 levels, at least during the first few days after taking it."
+
+  - url: https://www.rapamycin.news/t/what-is-the-rapamycin-dose-dosage-for-anti-aging-or-longevity/102
+    text: "Most users taking rapamycin for anti-aging, take between 3mg and 10mg per week, on a once-weekly dosing schedule."

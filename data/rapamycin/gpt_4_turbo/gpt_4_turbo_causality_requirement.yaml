@@ -1,0 +1,53 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-K9T5slUeS8SDABJ4FXHp4A"
+initial_query: "Should I take 5 mg Rapamycin once a week? That‘s me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values. Please consider my four characteristics separately, and then please aggregate the evidence. Please fulfill the following criteria in your response: consideration of causality."
+answer: |
+  Considering your characteristics separately:
+  A: Age (50 years old) - Rapamycin has been shown to extend lifespan in various organisms and is being studied for its potential to delay aging in humans. However, specific age-related recommendations for rapamycin use in humans are not well-established[3][7][9][13][14][16][17][20].
+  B: Moderately overweight - Rapamycin has been reported to prevent weight gain in mice on a high-fat diet and may have potential for treating obesity. However, its effects on weight in humans are not fully understood, and it should not be used as a weight loss supplement without medical supervision[4][12][18].
+  C: Slow vaccination response - Studies have shown that rapamycin can enhance the response to the influenza vaccine, particularly in older adults or those with a low baseline response to vaccines[7][8][20].
+  D: High IGF1 values - Rapamycin is an mTOR inhibitor and has been associated with decreased cancer risk, which could be relevant given the link between high IGF1 levels and cancer. However, the direct impact of rapamycin on IGF1 levels in humans requires further research[1][2][19].
+
+  When aggregating the evidence, it is important to note that while rapamycin has shown promise in preclinical studies and some early human trials for various age-related conditions, its long-term safety and efficacy in humans are not fully established. The decision to use rapamycin should be made in consultation with a healthcare provider, considering potential benefits, risks, and individual health status. Causality between rapamycin use and improved health outcomes in humans is still under investigation, and more research is needed to establish definitive guidelines for its use in the context of aging and related health conditions[3][7][9][13][14][16][17][20].
+
+  It is crucial to consult with a healthcare professional before starting any new medication or treatment, including rapamycin, to ensure it is appropriate for your specific health needs and conditions.
+sources:
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4207939/"
+    used_text: "Rapamycin’s mammalian longevity effects have since then been confirmed by a number of additional studies."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10103596/"
+    used_text: "Rapamycin can delay cancer not only by targeting precancerous/cancerous cells directly, but also by slowing down organismal aging."
+  - url: "https://www.medrxiv.org/content/10.1101/2023.10.02.23296427v1.full"
+    used_text: "Low-dose and long-term unauthorised rapamycin use has been gaining interest among anti-aging “biohackers” as a longevity-promoting intervention."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/"
+    used_text: "Here we demonstrated that i.p. injections of rapamycin prevented weight gain on high fat diet."
+  - url: "https://www.mpg.de/21610669/anti-ageing-drug-rapamycin-improves-immune-function-through-endolysosomes"
+    used_text: "Rapamycin is considered a promising anti-ageing drug that improves health in old age and alleviates the age-related decline in immune function."
+  - url: "https://www.nature.com/articles/s43587-022-00278-w"
+    used_text: "In mice, rapamycin can delay several age-related diseases, such as cognitive decline, spontaneous tumors and cardiovascular and immune system disorders."
+  - url: "https://link.springer.com/article/10.1007/s11357-023-00818-1"
+    used_text: "Off-label use of rapamycin has been gaining increasing attention, however, due to its efficacy and reproducibility for longevity and healthspan extension in preclinical studies."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643772/"
+    used_text: "Improvement in influenza vaccination response with rapamycin treatment."
+  - url: "https://www.aging-us.com/article/102355/text"
+    used_text: "Still, everyday treatment of the elderly (1 mg/day for several weeks) was not associated with side effects and has been shown to be safe."
+  - url: "https://www.authorea.com/users/324189/articles/452459-repurposing-metformin-and-rapamycin-to-target-age-related-diseases"
+    used_text: "Studies from model organisms and early stage human clinical trials have found that metformin and rapamycin have promising results in slowing aging and treating age-related diseases."
+  - url: "https://www.menshealth.com/health/a28440858/anti-aging-rapamycin/"
+    used_text: "Older people taking the drug for six weeks didn't see their immunity decrease—it actually increased in groups that took as little as 0.5mg a day."
+  - url: "https://www.tandfonline.com/doi/full/10.4161/15384101.2014.970491"
+    used_text: "Orally administrated (gavash) rapamycin has poor bioavailability. The i.p. route of its administration ensures high peak of systemic levels of rapamycin."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10415559/"
+    used_text: "Based on “side” and therapeutic effect-avoidance, the most popular schedule of rapamycin for longevity is 5–7 mg once a week."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814615/"
+    used_text: "Still, everyday treatment of the elderly (1 mg/day for several weeks) was not associated with side effects and has been shown to be safe."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4326934/"
+    used_text: "Weekly administration of rapamycin improved survival and biomarkers in obese mice on high-fat diet."
+  - url: "https://academic.oup.com/biomedgerontology/article/71/7/841/2605206"
+    used_text: "The intraperitoneal administration of 2-mg/kg rapamycin once every 5 days significantly inhibited mTORC1 in many tissues."
+  - url: "https://www.nature.com/articles/cddis2014520"
+    used_text: "In mice on high-fat diet, rapamycin decreases obesity and prevents weight gain."
+  - url: "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0092684"
+    used_text: "Rapamycin-treated mice were leaner and were protected against insulin resistance and maintained mTORC2 activity."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3237768/"
+    used_text: "Increased IGF-1 receptor (IGF-1R) and circulating IGF-1 levels were observed following rapamycin treatment."
+  - url: "https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext"
+    used_text: "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine."

@@ -1,0 +1,31 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-FL_aRHDSQUKpKHadiCVcew"
+initial_query: "Should I take 5 mg Rapamycin once a week? That‘s me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values. Please consider my four characteristics separately, and then please aggregate the evidence. Please fulfill the following criteria in your response: correctness."
+answer: |
+  Based on your characteristics, here's an analysis of whether 5 mg of Rapamycin once a week might be suitable:
+
+  (A) Age: At 50 years old, you are at an age where rapamycin could potentially offer anti-aging benefits. Research suggests that rapamycin can extend lifespan and healthspan in various organisms and might be beneficial when started in middle age[4][5].
+
+  (B) Weight: As someone who is moderately overweight, rapamycin could potentially aid in weight management. Studies have shown that rapamycin can reduce fat mass and body weight in animal models[3][5][15][16]. However, the effects in humans are less clear, and it should not be considered a primary method for weight loss.
+
+  (C) Vaccination Response: Rapamycin has been shown to enhance the response to vaccines in older adults by improving immune function[4][18]. This could potentially benefit someone with a historically slow vaccination response.
+
+  (D) High IGF1 Levels: Rapamycin is known to influence IGF1 levels, which are involved in aging and cancer risk. While some studies suggest rapamycin might lower IGF1 levels[2], the specific response can vary, and monitoring by a healthcare provider would be necessary.
+
+  Aggregated Evidence:
+  Taking 5 mg of rapamycin once a week could potentially offer benefits in terms of anti-aging, immune response to vaccines, and weight management based on your profile. However, given the complexity of rapamycin's effects and the variability in individual responses, it is crucial to consult with a healthcare provider who can consider your overall health, potential side effects, and monitor your response to the treatment, especially considering your high IGF1 levels.
+
+sources:
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/"
+    used_text: "Rapamycin prevented weight gain on a high-fat diet in mice."
+  - url: "https://www.rapamycin.news/t/high-igf1-level/938"
+    used_text: "Rapamycin should likely lower your IGF-1 levels."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643772/"
+    used_text: "Rapamycin extends lifespan in various organisms."
+  - url: "https://link.springer.com/article/10.1007/s11357-023-00818-1"
+    used_text: "Once weekly dosing of rapamycin could boost immune response to vaccines."
+  - url: "https://www.lifeextension.com/magazine/2022/6/rapamycin"
+    used_text: "Rapamycin may reduce fat mass and body weight."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8190242/"
+    used_text: "Rapamycin has shown to improve metabolic status in obese mice."
+  - url: "https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext"
+    used_text: "Rapamycin significantly increased the response to seasonal influenza vaccine."

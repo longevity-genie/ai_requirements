@@ -1,0 +1,27 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-EldNFWtLTlG1ywbr3c6Glg"
+
+initial_query: "Should I take 5 mg Rapamycin once a week?"
+answer: |
+  Based on the characteristics provided, here is an aggregated assessment of whether a 5 mg once-weekly dose of Rapamycin may be suitable:
+
+  (A) Age: Research has shown that Rapamycin can have immunomodulatory effects, potentially beneficial for aging individuals. A study found that treatment with everolimus, a Rapamycin derivative, at 5 mg/week orally for 6 weeks, significantly increased the response to the seasonal influenza vaccine, particularly in older adults with low baseline influenza titres[19].
+
+  (B) Weight: Rapamycin has been associated with weight loss in various studies. For instance, in mice on a high-fat diet, weekly injections of Rapamycin resulted in less weight gain compared to controls[18]. However, the translation of these effects from animal models to humans is not straightforward, and clinical advice should be sought.
+
+  (C) Vaccination Response: As mentioned, Rapamycin derivatives like everolimus have been shown to improve the response to vaccines in older individuals[19], which could potentially benefit someone with a slow vaccination response.
+
+  (D) High IGF1 Values: Rapamycin has been reported to lower IGF1 levels in some contexts. For example, a user on Rapamycin for three months on a 6mg per week dose reported no change in IGF1 levels, but the discussion suggests that Rapamycin should lower IGF1 levels after a dose[2]. However, the exact time it takes for IGF1 to decrease and the optimal dosing for this effect in humans are not well-established.
+
+  In summary, while there is some evidence that a 5 mg once-weekly dose of Rapamycin could potentially be beneficial for the characteristics listed, it is crucial to consult with a healthcare provider before starting any new medication regimen. The provider can consider your specific health profile, potential risks, and the current state of medical research to make a personalized recommendation.
+
+sources:
+  - url: "https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(23)00258-1/fulltext"
+    used_text: "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine, particularly in those with low baseline influenza titres."
+  - url: "https://www.rapamycin.news/t/high-igf1-level/938"
+    used_text: "A user on Rapamycin for three months on a 6mg per week dose reported no change in IGF1 levels, but the discussion suggests that Rapamycin should lower IGF1 levels after a dose."
+  - url: "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0092684"
+    used_text: "In mice on a high-fat diet, weekly injections of Rapamycin resulted in less weight gain compared to controls."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4326934/"
+    used_text: "Rapamycin given intermittently either weekly or alternating bi-weekly extends lifespan in mice while maintaining insulin sensitivity."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643772/"
+    used_text: "The Evaluate the safety and efficacy of RAPamycin as a geroPROTECTor (RAP-PROTECT) study is examining individuals who are taking rapamycin off-label for its potential anti-aging effects."

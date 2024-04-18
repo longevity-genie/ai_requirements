@@ -1,0 +1,58 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-WRF9bLasSh6bEfy2Vz_dcA"
+initial_query: "Should I take 5 mg Rapamycin once a week? That‘s me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values. Please consider my four characteristics separately, and then please aggregate the evidence. Please fulfill the following criteria in your response: consideration of standardized ways of analysis and reporting."
+answer: |
+  When considering the use of Rapamycin at a dose of 5 mg once a week for your specific characteristics, the following points emerge from the analysis of the sources:
+
+  A) Age (50-year-old male): Research indicates that Rapamycin has potential anti-aging effects and has been shown to improve immune response to vaccines in older adults[15][18]. However, the evidence is primarily from studies on animals and limited human clinical trials.
+
+  B) Moderately overweight: Studies in mice have shown that Rapamycin can prevent weight gain and have anti-obesity effects[2][7][10]. However, translating these results to humans requires caution, and the impact on weight in humans is not well-established.
+
+  C) Slow vaccination response: Rapamycin has been found to enhance the immune response to vaccines in older adults, which could potentially benefit individuals with a slow vaccination response[15][18]. However, the evidence is not conclusive, and further research is needed.
+
+  D) High IGF1 values: Rapamycin has been shown to manipulate cellular communication systems, which might influence IGF1 levels[19]. However, the relationship between Rapamycin use and IGF1 levels in humans is not clearly defined in the literature.
+
+  Aggregated evidence: While there is some evidence supporting the use of Rapamycin for anti-aging and improving immune response, the data is not sufficient to make a definitive recommendation for its use, especially considering the potential side effects and lack of FDA approval for longevity purposes[19]. It is essential to consult with a healthcare provider before starting any new medication regimen, including Rapamycin, to evaluate the potential benefits and risks based on your health status and medical history.
+
+  Standardized ways of analysis and reporting: The analysis of the evidence has been conducted by reviewing the available literature and studies, considering the quality of the sources, the relevance to the query, and the consistency of the findings across different studies.
+
+sources:
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/"
+    used_text: "Intraperitoneal injections of rapamycin prevented weight gain on high fat diet in mice."
+  - url: "https://www.tandfonline.com/doi/full/10.4161/15384101.2014.970491"
+    used_text: "Intermittent administration of rapamycin is more effective than everyday administration in preventing obesity in mice."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643772/"
+    used_text: "Rapamycin has been shown to improve immune response to vaccines in older adults."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814615/"
+    used_text: "Rapamycin's effects on longevity and healthspan extension in rodents."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4326934/"
+    used_text: "Weekly administration of rapamycin improved survival and biomarkers in obese male mice on high-fat diet."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4401992/"
+    used_text: "Rapamycin and aging: When, for how long, and how much?"
+  - url: "https://www.nature.com/articles/cddis2014520"
+    used_text: "Rapamycin decreases obesity and prevents weight gain in mice on high-fat diet."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10415559/"
+    used_text: "The most popular schedule of rapamycin for longevity is 5–7 mg once a week."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814615/"
+    used_text: "Everyday treatment of the elderly with rapamycin was not associated with side effects and has been shown to be safe."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4326934/"
+    used_text: "Weekly administration of rapamycin improves survival and biomarkers in obese male mice on high-fat diet."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4401992/"
+    used_text: "Rapamycin for longevity: opinion article."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814615/"
+    used_text: "Rapamycin for longevity: opinion article."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4401992/"
+    used_text: "Blazing a trail for the clinical use of rapamycin as a geroprotecTOR."
+  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3237768/"
+    used_text: "Akt/mammalian target of rapamycin counteract the antitumor activities of cixutumumab an anti-insulin-like growth factor I receptor monoclonal antibody."
+  - url: "https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext"
+    used_text: "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine."
+  - url: "https://link.springer.com/article/10.1007/s11357-020-00274-1"
+    used_text: "Effect of rapamycin on aging and age-related diseases—past and future."
+  - url: "https://academic.oup.com/biomedgerontology/article/71/7/841/2605206"
+    used_text: "Rapamycin: An InhibiTOR of Aging Emerges From the Soil of Easter Island."
+  - url: "https://gethealthspan.com/science/article/optimal-rapamycin-dosing-strategies-for-immunity-enhancement"
+    used_text: "How Rapamycin Optimizes Immune System Function and Fights Aging."
+  - url: "https://www.washingtonpost.com/business/2024/03/15/rapamycin-longevity-drug/"
+    used_text: "How a cheap, generic drug became a darling of longevity enthusiasts."
+  - url: "https://translational-medicine.biomedcentral.com/articles/10.1186/1479-5876-8-14"
+    used_text: "Comparison of three rapamycin dosing schedules in A/J Tsc2 + mice and improved survival with angiogenesis inhibitor or asparaginase treatment in mice with subcutaneous tuberous sclerosis related tumors."

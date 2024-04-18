@@ -1,0 +1,52 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-iKWtLfO5Sg6_pvkFArBTYw"
+
+query: "Q: Should I take 5 mg Rapamycin once a week? That's me:
+(A) 50 year old male
+(B) Moderately overweight 
+(C) Slow vaccination response
+(D) High IGF1 values.
+Please consider my four characteristics separately, and then please aggregate the evidence.
+Please fulfill the following criteria in your response: consideration of longitudinal data."
+
+answer: |
+  (A) 50 year old male:
+    Rapamycin has been shown to extend lifespan and healthspan in mice, even when started in middle age[4]. Initial evidence suggests rapamycin may have similar beneficial effects in humans[4]. 
+  
+  (B) Moderately overweight:
+    Rapamycin may help prevent weight gain on a high-fat diet, especially when given via intraperitoneal injection to achieve high peak levels[3]. Oral rapamycin has also been shown to slightly decrease weight gain long-term in mice[3].
+  
+  (C) Slow vaccination response: 
+    Once weekly dosing of the rapalog everolimus at 5 mg/week for 6 weeks was found to boost influenza vaccine response in older adults[4]. Rapamycin may enhance certain aspects of immune function at lower doses[4].
+  
+  (D) High IGF1 values:
+    Rapamycin should lower IGF-1 levels, at least transiently in the days following a dose[2]. Testing peak sirolimus levels after a dose can confirm adequate absorption[2]. Selenium supplementation and improving insulin sensitivity may also help lower IGF-1[2].
+  
+  Aggregate evidence:
+    Most people taking rapamycin for anti-aging use between 3-10mg per week, often on a once-weekly dosing schedule[1]. Rapamycin has the potential to provide healthspan and longevity benefits, help manage weight, boost vaccine response, and lower IGF-1 levels. However, the optimal dose and schedule for humans is still being determined. Working with a knowledgeable physician, monitoring bloodwork, and titrating the dose carefully is advisable.
+
+sources:
+  - index: 1
+    url: https://www.rapamycin.news/t/what-is-the-rapamycin-dose-dosage-for-anti-aging-or-longevity/102
+    text: "Most users taking rapamycin for anti-aging, take between 3mg and 10mg per week, on a once-weekly dosing schedule."
+
+  - index: 2
+    url: https://www.rapamycin.news/t/high-igf1-level/938
+    text: "Rapamycin should likely lower your IGF-1 levels, at least during the first few days after taking it. What was your IGF-1 level prior to taking rapamycin? Did you ever test it?
+    
+    I'd test the peak sirolimus levels after a dose to be sure you are getting it into your bloodstream.
+    
+    Selenium supplementation inhibits IGF-1 signaling and confers methionine restriction-like healthspan benefits to mice eLife According to this article selenium supplementation lowers IGF-I levels in rat models.
+    
+    Wonder if further reduction of A1C will help lower IGF1. Metformin has shown to reduce IGF1 and you have room to the upper limit of 2,000mg."
+
+  - index: 3
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/
+    text: "Here we demonstrated that i.p. injections of rapamycin prevented weight gain on high fat diet, whereas rapamycin by gavash (also given 3 times per 2 weeks) did not. 
+    
+    In our study, chronic administration of rapamycin in drinking water, which was previously shown to extend life-span in mice, slightly decreased weight gain after 15 months of treatment and this effect was comparable with the effect of metformin."
+
+  - index: 4
+    url: https://link.springer.com/article/10.1007/s11357-023-00818-1
+    text: "Rapamycin is an inhibitor of the mechanistic target of rapamycin (mTOR), and has been shown to increase lifespan in laboratory organisms including yeast [14, 15], nematode worms , fruit flies [17, 18], and mice [19,20,21,22,23,24,25,26,27,28,29]. In addition to increasing lifespan, rapamycin has numerous healthspan benefits in rodents such as lower cancer incidence [20, 30], improved cognitive function [31, 32], improved kidney function , preservation of tendon , improved intestinal function and reduced gut dysbiosis [28, 35], preservation of ovarian function , and protection against hearing loss . Transient treatment with rapamycin in middle age is sufficient to robustly extend lifespan in mice and reverse a subset immune system , and oral cavity [42, 43]. Initial evidence supports the idea that rapamycin or rapamycin derivatives (rapalogs) may have similar beneficial effects on 46].
+    
+    For example, once weekly dosing of the rapalog everolimus (RAD001) at 5 mg/week for 6 weeks was found to boost influenza vaccine response Likewise, few side effects appear to be associated with lower-dose, short-term rapamycin use in healthy adults ,"

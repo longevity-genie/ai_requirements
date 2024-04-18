@@ -1,0 +1,23 @@
+perplexity_search: "https://www.perplexity.ai/search/Q-Should-I-qkTPcFUmQM.i78qNiYfJoA"
+
+initial_query: "Should I take 5 mg Rapamycin once a week? That‘s me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values. Please consider my four characteristics separately, and then please aggregate the evidence. Please fulfill the following criteria in your response: human interpretability."
+answer: |
+  Based on your characteristics, here's an analysis of whether 5 mg of Rapamycin once a week could be beneficial:
+
+  (A) Age (50 years old): Rapamycin has been studied for its potential to extend lifespan and improve healthspan. Research shows that low or intermittent doses of mTOR inhibitors, like Rapamycin, might enhance immune function in older adults[19].
+
+  (B) Moderately overweight: Rapamycin has been shown to prevent weight gain and decrease obesity in rodent models. However, its effectiveness and safety for weight management in humans are not well-established[12].
+
+  (C) Slow vaccination response: Studies indicate that Rapamycin can enhance the immune response to vaccines in older adults. For instance, treatment with everolimus, a derivative of Rapamycin, improved the response to influenza vaccines[14][19].
+
+  (D) High IGF1 values: Rapamycin is known to reduce IGF1 levels in some contexts, which could potentially be beneficial given your high IGF1 values. However, the direct impact on humans outside of specific disease treatments (like cancer) is less clear[12].
+
+  Aggregated evidence: Taking 5 mg of Rapamycin once a week may potentially benefit you by enhancing your immune response to vaccines and possibly managing weight and IGF1 levels. However, the use of Rapamycin for these purposes in healthy individuals is not FDA-approved, and its long-term effects are not fully understood. It is crucial to consult with a healthcare provider to consider your overall health condition and potential risks.
+
+sources:
+  - url: "https://www.nature.com/articles/s43587-023-00416-y"
+    used_text: "The clinical trial demonstrated that 6 weeks of treatment with everolimus at either 0.5 mg once daily or 5 mg once weekly was well tolerated and enhanced immune function in older adults."
+  - url: "https://www.nature.com/articles/cddis2014520"
+    used_text: "In mice on high-fat diet, rapamycin decreases obesity and prevents weight gain."
+  - url: "https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(23)00258-1/fulltext"
+    used_text: "Treatment with everolimus (0.5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine."

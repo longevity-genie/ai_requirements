@@ -1,0 +1,71 @@
+perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-GArn6.RNSt.kX9LfkgmD5g"
+
+query: "Should I take 5 mg Rapamycin once a week? That's me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values. Please consider my four characteristics separately, and then please aggregate the evidence."
+
+answer: |
+  (A) 50 year old male:
+  Rapamycin has been shown to extend lifespan in mice when started in middle-age or later[1][9]. In humans, low-dose rapamycin (0.5-5 mg per week) appears to be well-tolerated in older adults[3][13].
+
+  (B) Moderately overweight: 
+  In mice, rapamycin prevents obesity and weight gain on a high-fat diet[1][7][11]. In overweight humans, low-dose rapamycin may help improve metabolic health and insulin sensitivity[3][15].
+
+  (C) Slow vaccination response:
+  Low-dose everolimus (a rapamycin derivative), at 0.5 mg daily or 5 mg weekly, improved the response to influenza vaccination in older adults, especially those with low baseline responses[3][13][14]. This suggests rapamycin could help boost vaccine efficacy.
+
+  (D) High IGF1 values:
+  Rapamycin inhibits mTOR, a key regulator of IGF1 signaling[18]. By reducing IGF1 activity, rapamycin may help lower cancer risk and slow aging[8][12]. However, the optimal rapamycin dose for lowering IGF1 in humans is unknown.
+
+  In aggregate, the evidence suggests that for a 50-year-old overweight male with slow vaccine response and high IGF1, a rapamycin dose of 5 mg once per week could potentially provide anti-aging and metabolic benefits with a favorable safety profile[1][3][4][13]. However, rapamycin should only be used under medical supervision after carefully weighing the risks and benefits for each individual[5][15].
+
+sources:
+  - index: 1
+    url: https://www.rapamycin.news/t/what-is-the-rapamycin-dose-dosage-for-anti-aging-or-longevity/102
+    text: "Note: Most users taking rapamycin for anti-aging, take between 3mg and 10mg per week, on a once-weekly dosing schedule."
+
+  - index: 3
+    url: https://link.springer.com/article/10.1007/s11357-023-00818-1
+    text: "For example, once weekly dosing of the rapalog everolimus (RAD001) at 5 mg/week for 6 weeks was found to boost influenza vaccine response"
+
+  - index: 4
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/
+    text: "Based on \"side\" and therapeutic effect-avoidance, the most popular schedule of rapamycin for longevity is 5–7 mg once a week."
+
+  - index: 5
+    url: https://www.aging-us.com/article/102355/text
+    text: "The optimal anti-aging dose is a personalized maximum dose that does not cause side effects in a particular patient"
+
+  - index: 7
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4326934/
+    text: "In mice on high-fat diet, rapamycin decreases obesity and prevents weight gain."
+
+  - index: 8
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814615/
+    text: "rapamycin is the most effective known cancer-preventive agent in mice"
+
+  - index: 9
+    url: https://academic.oup.com/biomedgerontology/article/71/7/841/2605206
+    text: "Single doses of 2-mg/kg rapamycin injected once every 5 days was the most frequent treatment regimen that did not impair this dosing regimen also had a reduced impact on the immune system while still significantly inhibiting mTORC1 in many"
+
+  - index: 11
+    url: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0092684
+    text: "Mice were fed on HFD for 6 weeks before receiving rapamycin (Rapa: •) or vehicle (Ve: ○) once a week for 22 weeks."
+
+  - index: 12
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8190242/
+    text: "showed that giving rapamycin (0.1 mg/kg, 3 times/week) for 10 weeks to middle-aged companion dogs improved both systolic and diastolic cardiac function."
+
+  - index: 13
+    url: https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568%2823%2900258-1/fulltext
+    text: "Treatment with everolimus (0·5 mg/day or 5 mg/week orally, for 6 weeks) significantly increased the response to seasonal influenza vaccine, particularly in those with low baseline influenza titres."
+
+  - index: 14
+    url: https://gethealthspan.com/science/article/optimal-rapamycin-dosing-strategies-for-immunity-enhancement
+    text: "The study's preliminary results showed that RAD001 was generally well-tolerated, particularly at the 0.5 mg daily and 5 mg weekly doses. The study's primary endpoint—they showed an increase in HI"
+
+  - index: 15
+    url: https://www.nature.com/articles/s43587-023-00416-y
+    text: "Preliminary results from these studies suggest that lower or intermittent dosing regimens of mTOR inhibitors that turn down Of interest, clinical trials to date suggest that low or intermittent doses of mTOR inhibitors enhance rather than suppress immune"
+
+  - index: 18
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7331117/
+    text: "Rapamycin allosterically inhibits mTORC1 by binding to the FRB domain of mTOR."

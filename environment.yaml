@@ -8,9 +8,11 @@ dependencies:
   - pip
   - pip:
       - openai
-      - dotenv
+      - pycomfort
       - crewai
       - 'crewai[tools]'
+      - langchain>=0.1.16
       - langchain_openai
+      - langchain-community>=0.0.33
       - requests
       - xmltodict

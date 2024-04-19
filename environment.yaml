@@ -8,11 +8,16 @@ dependencies:
   - pip
   - pip:
       - openai
+      - anthropic
       - pycomfort
       - crewai
       - 'crewai[tools]'
+      - gptcache
       - langchain>=0.1.16
       - langchain_openai
       - langchain-community>=0.0.33
+      - langchain-anthropic>=0.1.11
+      - langchain-openai
+      - langchain-experimental
       - requests
       - xmltodict

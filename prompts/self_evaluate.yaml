@@ -1,0 +1,11 @@
+input_variables: [question, response, requirements, format]
+output_parser: null
+template: "You responded to the question: 
+The question was: ```{question}```
+Your response was: ```{response}``` 
+Please assess yourself: how well did you, in your last response, address the following requirements: 
+{requirements}
+The answer must be in the following format:
+{format}
+"
+template_format: f-string

@@ -11,7 +11,7 @@ correctness:
   score: good
 general_evaluation:
   cons: The response could be improved by more discussion of potential risks, longitudinal
-    human data, and integration with known aging biology mechanisms.
+    human data, and integration with known_aging_biology mechanisms.
   pros: The response provides a balanced assessment of the potential benefits of rapamycin
     for the individual's characteristics, citing relevant scientific evidence.
   score: moderate

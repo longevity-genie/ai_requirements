@@ -11,7 +11,7 @@ correctness:
   score: good
 general_evaluation:
   cons: The answer could have been more comprehensive in addressing some of the key
-    requirements, such as longitudinal data and known aging biology.
+    requirements, such as longitudinal data and known_aging_biology.
   pros: The answer provides a balanced and evidence-based overview of the potential
     benefits and risks of rapamycin use for the individual's specific characteristics.
   score: moderate

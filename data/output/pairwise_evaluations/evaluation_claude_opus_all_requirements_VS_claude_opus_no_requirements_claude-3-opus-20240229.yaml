@@ -1,0 +1,66 @@
+causality:
+  answer_1_cons: Could be more explicit about the strength of causal evidence for
+    each claim.
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Distinguishes correlation from causation when discussing rapamycin's
+    effects. Notes limitations of animal studies.
+  answer_1_score: moderate
+  answer_2_cons: Some statements blur the line between correlation and causation,
+    e.g., regarding weight and IGF-1 effects.
+  answer_2_name: claude_opus_no_requirements.yaml
+  answer_2_pros: Mostly avoids implying causation when evidence is limited to correlation.
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Neither answer fully unpacks the causal reasoning, but Answer 1 is somewhat
+    more careful about distinguishing correlation and causation.
+correctness:
+  answer_1_cons: Some statements could be more precise, e.g., the specific effects
+    of rapamycin on IGF-1 signaling.
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Provides accurate information about rapamycin's effects on lifespan,
+    weight, vaccine response, and IGF-1. Cites relevant studies.
+  answer_1_score: good
+  answer_2_cons: Less detailed and precise than Answer 1. Some statements lack nuance,
+    e.g., about rapamycin's effects on immunity.
+  answer_2_name: claude_opus_no_requirements.yaml
+  answer_2_pros: Gives generally accurate information about rapamycin's effects relevant
+    to the user's profile.
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Both answers provide mostly accurate information, but Answer 1 is more
+    detailed and well-supported.
+human_interpretability:
+  answer_1_cons: The level of detail may be a bit much for some readers. A few technical
+    terms are used without definition.
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Well-organized by characteristic. Clearly explains rationale and
+    caveats. Avoids excessive jargon.
+  answer_1_score: good
+  answer_2_cons: Flow is a bit choppy. Some important context is lacking compared
+    to Answer 1.
+  answer_2_name: claude_opus_no_requirements.yaml
+  answer_2_pros: Relatively concise and easy to follow. Highlights key take-aways
+    for the user.
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: While Answer 2 is somewhat easier to digest, Answer 1 does a better job
+    thoroughly explaining the reasoning to the user.
+toxicity_and_holistic_evidence:
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Discusses potential side effects and drug
+usefulness_and_comprehensiveness:
+  answer_1_cons: Could provide more practical guidance on how to implement the recommendation
+    safely.
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Addresses each of the user's characteristics in detail. Provides
+    a clear overall recommendation with caveats.
+  answer_1_score: good
+  answer_2_cons: Less comprehensive than Answer 1. Lacks some important details and
+    nuance.
+  answer_2_name: claude_opus_no_requirements.yaml
+  answer_2_pros: Covers the key points relevant to the user's situation. Gives a reasonable
+    bottom-line recommendation.
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides a more thorough and useful analysis for the user's specific
+    case.

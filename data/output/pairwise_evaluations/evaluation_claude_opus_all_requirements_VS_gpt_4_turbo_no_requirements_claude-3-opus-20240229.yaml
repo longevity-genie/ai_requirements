@@ -1,0 +1,64 @@
+causality:
+  answer_1_cons: Could more clearly distinguish correlation and causation in some
+    cases.
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Discusses potential causal relationships between rapamycin and various
+    outcomes. Cites studies that suggest causal effects.
+  answer_1_score: moderate
+  answer_2_cons: Discusses causality less extensively than Answer 1. Some claims lack
+    clear causal support.
+  answer_2_name: gpt_4_turbo_no_requirements.yaml
+  answer_2_pros: Mentions some potential causal effects of rapamycin.
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Neither answer fully addresses causality, but Answer 1 engages with the
+    topic more substantively.
+correctness:
+  answer_1_cons: Some statements could benefit from additional context or qualifiers.
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Provides accurate information about rapamycin's effects on lifespan,
+    weight, vaccination response, and IGF-1 levels. Cites relevant studies to support
+    claims.
+  answer_1_score: good
+  answer_2_cons: Lacks the depth and specificity of Answer 1. Some claims are less
+    well-supported.
+  answer_2_name: gpt_4_turbo_no_requirements.yaml
+  answer_2_pros: Offers generally accurate information about rapamycin's potential
+    effects on the user's characteristics. Cites some relevant studies.
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Both answers provide mostly accurate information, but Answer 1 is more
+    comprehensive and better-supported by evidence.
+human_interpretability:
+  answer_1_cons: Lengthy response may be challenging for some readers.
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Well-organized and easy to follow. Explains concepts clearly. Minimal
+    jargon.
+  answer_1_score: good
+  answer_2_cons: Lacks the depth and detail that some readers may desire.
+  answer_2_name: gpt_4_turbo_no_requirements.yaml
+  answer_2_pros: Concise and readable. Avoids excessive jargon.
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Both answers are generally interpretable, but Answer 1 provides more thorough
+    explanations.
+toxicity_and_holistic_evidence:
+  answer_1_cons: Could discuss toxicity and side effect risks in greater detail.
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Acknowledges potential side effects and drug interactions. Recommends
+    physician supervision. Cites a range of evidence types.
+usefulness_and_comprehensiveness:
+  answer_1_cons: Could be more concise in some sections.
+  answer_1_name: claude_opus_all_requirements.yaml
+  answer_1_pros: Addresses each of the user's characteristics in detail. Provides
+    a clear, aggregated recommendation. Includes numerous relevant citations.
+  answer_1_score: good
+  answer_2_cons: Less detailed and comprehensive than Answer 1. Fewer citations to
+    support claims.
+  answer_2_name: gpt_4_turbo_no_requirements.yaml
+  answer_2_pros: Addresses each of the user's characteristics. Offers a general recommendation.
+    Includes some relevant citations.
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides a more useful and comprehensive response to the user's
+    question.

@@ -1,0 +1,114 @@
+causality:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Could provide more explicit discussion of causality
+  answer_1_pros: Provides some evidence on the causal effects of rapamycin
+  answer_1_score: moderate
+  answer_2: mistral_large_no_requirements.yaml
+  answer_2_cons: Lacks a clear discussion of causality
+  answer_2_pros: Provides some relevant information on the effects of rapamycin
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides some evidence on the causal effects of rapamycin.
+correctness:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: None
+  answer_1_pros: Provides a clear and well-structured analysis of each characteristic
+  answer_1_score: good
+  answer_2: mistral_large_no_requirements.yaml
+  answer_2_cons: Lacks a clear and structured analysis of each characteristic
+  answer_2_pros: Provides some relevant information on the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides a more comprehensive and structured analysis of each
+    characteristic.
+general_evaluation:
+  answer_1_cons: None
+  answer_1_pros: Provides a comprehensive and well-structured analysis of each characteristic
+  answer_1_score: good
+  answer_2_cons: Lacks a comprehensive and structured analysis of each characteristic
+  answer_2_pros: Provides some relevant information on the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides a more comprehensive and structured analysis of each
+    characteristic.
+holistic/interdisciplinary evidence:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: None
+  answer_1_pros: Provides a comprehensive analysis of each characteristic and aggregates
+    the evidence
+  answer_1_score: good
+  answer_2: mistral_large_no_requirements.yaml
+  answer_2_cons: Lacks a comprehensive analysis of each characteristic
+  answer_2_pros: Provides some relevant information on the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides a more comprehensive analysis of each characteristic.
+human interpretability:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: None
+  answer_1_pros: Provides a clear and well-structured analysis of each characteristic
+  answer_1_score: good
+  answer_2: mistral_large_no_requirements.yaml
+  answer_2_cons: Lacks a clear and structured analysis of each characteristic
+  answer_2_pros: Provides some relevant information on the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides a more clear and structured analysis of each characteristic.
+known_aging_biology:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: None
+  answer_1_pros: Provides a comprehensive analysis of each characteristic and aggregates
+    the evidence
+  answer_1_score: good
+  answer_2: mistral_large_no_requirements.yaml
+  answer_2_cons: Lacks a comprehensive analysis of each characteristic
+  answer_2_pros: Provides some relevant information on the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides a more comprehensive analysis of each characteristic.
+longitudinal data:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Could provide more detailed information on longitudinal data
+  answer_1_pros: Provides some evidence on the long-term effects of rapamycin
+  answer_1_score: moderate
+  answer_2: mistral_large_no_requirements.yaml
+  answer_2_cons: Lacks any discussion of longitudinal data
+  answer_2_pros: None
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides some evidence on the long-term effects of rapamycin.
+standardized ways of analysis and reporting:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: None
+  answer_1_pros: Provides a clear and structured analysis of each characteristic
+  answer_1_score: good
+  answer_2: mistral_large_no_requirements.yaml
+  answer_2_cons: Lacks a clear and structured analysis of each characteristic
+  answer_2_pros: None
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides a clear and structured analysis of each characteristic.
+toxicity:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Could provide more detailed information on toxicity
+  answer_1_pros: Mentions potential side effects and interactions of rapamycin
+  answer_1_score: moderate
+  answer_2: mistral_large_no_requirements.yaml
+  answer_2_cons: Lacks any discussion of toxicity
+  answer_2_pros: None
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides some information on potential side effects and interactions
+    of rapamycin.
+usefulness and comprehensiveness:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: None
+  answer_1_pros: Provides a comprehensive analysis of each characteristic and aggregates
+    the evidence
+  answer_1_score: good
+  answer_2: mistral_large_no_requirements.yaml
+  answer_2_cons: Lacks a comprehensive analysis of each characteristic
+  answer_2_pros: Provides some relevant information on the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides a more comprehensive analysis of each characteristic.

@@ -1,0 +1,108 @@
+causality:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Could provide more depth on causal relationships
+  answer_1_pros: Provides some information about causal relationships
+  answer_1_score: moderate
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Does not provide enough information
+  answer_2_pros: Lacks information on causal relationships
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides more information on causal relationships
+correctness:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Some sentences are unclear or hard to understand
+  answer_1_pros: Provides accurate information about rapamycin and its effects
+  answer_1_score: good
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks depth and accuracy in some parts
+  answer_2_pros: Provides some relevant information about rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides more accurate and comprehensive information
+general_evaluation:
+  answer_1_cons: Some sentences are unclear or hard to understand
+  answer_1_pros: Provides accurate and comprehensive information
+  answer_1_score: good
+  answer_2_cons: Lacks depth and breadth of information
+  answer_2_pros: Provides some useful information
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides more accurate and comprehensive information
+holistic_interdisciplinary_evidence:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Could provide more information from different fields
+  answer_1_pros: Provides information from multiple sources
+  answer_1_score: good
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Does not provide enough interdisciplinary evidence
+  answer_2_pros: Lacks information from multiple fields
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides more holistic and interdisciplinary evidence
+human_interpretability:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Some sentences are too long or complex
+  answer_1_pros: Well-structured and easy to follow
+  answer_1_score: good
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks clarity in some sections
+  answer_2_pros: Easy to read and understand
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 is more well-structured and easy to follow
+known_aging_biology:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Could provide more information on aging biology
+  answer_1_pros: Provides information on known aging biology
+  answer_1_score: good
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Does not provide enough information
+  answer_2_pros: Lacks information on known aging biology
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides more information on known aging biology
+longitudinal_data:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Could provide more information on longitudinal data
+  answer_1_pros: Provides some information on longitudinal studies
+  answer_1_score: moderate
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Does not provide enough information
+  answer_2_pros: Lacks information on longitudinal data
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides more information on longitudinal data
+standardized_ways_of_analysis_and_reporting:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Could provide more standardized analysis and reporting
+  answer_1_pros: Provides clear and structured information
+  answer_1_score: good
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Does not provide enough structured information
+  answer_2_pros: Lacks standardized analysis and reporting
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides more standardized analysis and reporting
+toxicity:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Could provide more information on toxicity
+  answer_1_pros: Mentions potential side effects and interactions
+  answer_1_score: moderate
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Does not provide enough information
+  answer_2_pros: Lacks information on toxicity
+  answer_2_score: bad
+  best_answer: answer_1
+  comments: Answer 1 provides more information on toxicity
+usefulness_and_comprehensiveness:
+  answer_1: claude_opus_all_requirements.yaml
+  answer_1_cons: Some sections are too brief
+  answer_1_pros: Covers multiple aspects of rapamycin and its effects
+  answer_1_score: good
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks depth and breadth of information
+  answer_2_pros: Provides some useful information
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides more comprehensive information

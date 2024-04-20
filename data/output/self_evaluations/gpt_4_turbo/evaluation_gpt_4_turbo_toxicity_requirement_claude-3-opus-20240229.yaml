@@ -30,7 +30,7 @@ human_interpretability:
   score: good
 known_aging_biology:
   cons: The response does not provide a detailed explanation of how Rapamycin interacts
-    with known aging biology mechanisms and how this relates to the specific characteristics
+    with known_aging_biology mechanisms and how this relates to the specific characteristics
     provided.
   pros: The response discusses the potential effects of Rapamycin on aging-related
     pathways, such as mTOR and IGF-1 signaling.

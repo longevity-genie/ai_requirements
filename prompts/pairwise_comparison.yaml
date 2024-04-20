@@ -1,0 +1,16 @@
+input_variables: [question, answer_1, answer_2, answer_1_name, answer_2_name, requirements, format]
+_type: "prompt"
+output_parser: null
+template: "User asked the following question:
+```{question}```
+Two answers were generated.
+Answer_1 also called {answer_1_name} was:
+```{answer_1}``` 
+Answer_2 also called {answer_2_name} was:
+```{answer_2}```
+Please compare to answer according to the following requirements:
+{requirements}
+The result must be in the following format:
+{format}
+"
+template_format: f-string

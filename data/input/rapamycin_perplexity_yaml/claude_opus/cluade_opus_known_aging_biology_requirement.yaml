@@ -7,7 +7,7 @@ query: |
   (C) Slow vaccination response
   (D) High IGF1 values.
   Please consider my four characteristics separately, and then please aggregate the evidence.
-  Please fulfill the following criteria in your response: consideration of known aging biology.
+  Please fulfill the following criteria in your response: consideration of known_aging_biology.
 
 answer: |
   Based on the information provided and a review of the current research on rapamycin and aging, here is an assessment for each of your characteristics:

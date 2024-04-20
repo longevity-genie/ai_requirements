@@ -13,6 +13,7 @@ from langchain_core.prompts import ChatPromptTemplate, load_prompt
 from langchain_core.runnables import RunnableSerializable
 from pycomfort.config import load_environment_keys
 from langchain.chains import LLMChain
+from langchain_groq import ChatGroq
 
 load_environment_keys(usecwd=True)
 base = Path(".")
@@ -20,6 +21,7 @@ data = base / "data"
 input = data / "input"
 output = data / "output"
 self_evaluations = output / "self_evaluations"
+pairwise_evaluations = output / "pairwise_evaluations"
 perplexity_yaml = input / "rapamycin_perplexity_yaml"
 
 prompts = base / "prompts"
@@ -29,9 +31,12 @@ default_question = defaults["question"]
 default_requirements = defaults["requirements"]
 default_format = defaults["format"]
 
-default_answer = perplexity_yaml / 'claude_opus' / "claude_opus_all_requirements.yaml"
+default_format_pairwise = defaults["format_pairwise"]
 
-default_models = ["claude-3-opus-20240229", "gpt-4-turbo"]
+default_answer = perplexity_yaml / 'claude_opus' / "claude_opus_all_requirements.yaml"
+default_answer_2 = perplexity_yaml / 'claude_opus' / "claude_opus_no_requirements.yaml"
+
+default_models = ["claude-3-opus-20240229", "gpt-4-turbo", "llama3-70b-8192"]
 
 #setting up prompt and output parser
 prompt_evaluate_answer = load_prompt(path =prompts / "self_evaluate.yaml")
@@ -41,11 +46,20 @@ output_parser = JsonOutputParser()
 model_gpt_4 = ChatOpenAI(model="gpt-4-turbo", temperature=0.0)
 chain_evaluate_answer_gpt_4: LLMChain = prompt_evaluate_answer | model_gpt_4 | output_parser
 
-
+model_llama_3 = ChatGroq(model="llama3-70b-8192", temperature=0.0)
+chain_evaluate_answer_llama_3: LLMChain = prompt_evaluate_answer | model_llama_3 | output_parser
 
 #setting up Claude
 model_claude = ChatAnthropic(model="claude-3-opus-20240229", temperature=0.0)
 chain_evaluate_answer_claude_opus: LLMChain = prompt_evaluate_answer | model_claude | output_parser
+
+
+prompt_pairwise_comparison = load_prompt(path =prompts / "pairwise_comparison.yaml")
+
+chain_pairwise_comparison_gpt_4: LLMChain = prompt_pairwise_comparison | model_gpt_4 | output_parser
+chain_pairwise_comparison_claude_opus: LLMChain = prompt_pairwise_comparison | model_claude | output_parser
+chain_pairwise_comparison_llama_3: LLMChain = prompt_pairwise_comparison | model_llama_3 | output_parser
+
 
 
 def extract_fields(yaml_file: Path) -> Dict[str, Optional[Any]]:
@@ -74,8 +88,62 @@ def extract_fields(yaml_file: Path) -> Dict[str, Optional[Any]]:
 def app(ctx):
     pass
 
+@app.command("compare_answers")
+@click.option('--model', default = "llama3-70b-8192", help="the model to use for evaluation, llama3-70b-8192 by default")
+@click.option('--answer_1', default = default_answer, type=click.Path(exists=True, dir_okay=False, path_type=Path))
+@click.option('--answer_2', default = default_answer_2, type=click.Path(exists=True, dir_okay=False, path_type=Path))
+@click.option('--question', default = default_question, help="question that we asked the model")
+@click.option('--requirements', default = default_requirements, help="criteria that we used for evaluation")
+@click.option('--format', default = default_format_pairwise, help="criteria to format the answer")
+@click.option("--where", default=pairwise_evaluations, type=click.Path(exists=True, dir_okay=True, path_type=Path), help="folder where to write output")
+@click.option("--num", default = 0, type=click.INT)
+def compare_answers(model: str, answer_1: Path, answer_2: Path, question: str, requirements: str, format: str, where: Path, num: int):
+    dic_1 = extract_fields(answer_1)
+    dic_2 = extract_fields(answer_2)
+    input = {
+        "question" : question,
+        "answer_1_name": answer_1.name,
+        "answer_1" : str(dic_1),
+        "answer_2_name": answer_2.name,
+        "answer_2" : str(dic_2),
+        "requirements": requirements,
+        "format": format
+    }
+    if "claude" in model:
+        chain = chain_pairwise_comparison_claude_opus
+    elif "gpt" in model:
+        chain = chain_pairwise_comparison_gpt_4
+    else:
+        chain = chain_pairwise_comparison_llama_3
+    result = chain.invoke(input)
+    click.echo(f"RESULT:\n {result}")
+    number_suffix = "" if num == 0 else "_" + str(num)
+    to_write = where / f"evaluation_{answer_1.stem}_VS_{answer_2.stem}_{model}{number_suffix}.yaml"
+    click.echo(f"Writing to: {to_write}")
+    yaml.dump(result, to_write.open('w'))
+    return result
+
+@app.command('compare_answer_against_folder')
+@click.option('--folder', type=click.Path(exists=True, file_okay=False), required=True, help='Path to the folder containing YAML files.')
+@click.option('--models', multiple=True, default=default_models, help='List of model names to evaluate.')
+@click.option('--question', default = default_question, help="question that we asked the model")
+@click.option('--answer_1', default = default_answer, type=click.Path(exists=True, dir_okay=False, path_type=Path))
+@click.option('--requirements', default = default_requirements, help="criteria that we used for evaluation")
+@click.option('--format', default = default_format_pairwise, help="criteria to format the answer")
+@click.option("--where", default=pairwise_evaluations, type=click.Path(exists=True, dir_okay=True, path_type=Path), help="folder where to write output")
+@click.option("--num", default = 0, type=click.INT)
+@click.pass_context
+def evaluate_folder(ctx: click.Context, folder: str, models: List[str], question: str, answer_1: Path, requirements: str, format: str, where: Path, num: int):
+    folder_path = Path(folder)
+    yaml_files = [f for f in folder_path.iterdir() if f.suffix == '.yaml']
+    for yaml_file in yaml_files:
+        for model in models:
+            if yaml_file != answer_1:
+                ctx.invoke(compare_answers, model=model, question=question, answer_1 = answer_1, answer_2 = yaml_file,
+                           requirements=requirements, format=format, where=where, num=num)
+
 @app.command("evaluate_answer")
-@click.option('--model', default = "claude-3-opus", help="the model to use for evaluation, claude-3-opus by default")
+@click.option('--model', default = "llama3-70b-8192", help="the model to use for evaluation, llama3-70b-8192 by default")
 @click.argument('filepath', default = default_answer, type=click.Path(exists=True, dir_okay=False, path_type=Path))
 @click.option('--question', default = default_question, help="question that we asked the model")
 @click.option('--requirements', default = default_requirements, help="criteria that we used for evaluation")
@@ -85,14 +153,19 @@ def app(ctx):
 def evaluate_answer(model: str, filepath: Path, question: str, requirements: str, format: str, where: Path, num: int):
     dic = extract_fields(filepath)
     response = str(dic)
-
     input = {
         "question" : question,
         "response" : response,
         "requirements": requirements,
         "format": format
     }
-    chain = chain_evaluate_answer_claude_opus if "claude" in model else chain_evaluate_answer_gpt_4
+    if "claude" in model:
+        chain = chain_evaluate_answer_claude_opus
+    elif "gpt" in model:
+        chain = chain_evaluate_answer_gpt_4
+    else:
+        print("LLAMA BABY!")
+        chain = chain_evaluate_answer_llama_3
     result = chain.invoke(input)
     click.echo(f"RESULT:\n {result}")
     number_suffix = "" if num == 0 else "_" + str(num)
@@ -100,6 +173,7 @@ def evaluate_answer(model: str, filepath: Path, question: str, requirements: str
     click.echo(f"Writing to: {to_write}")
     yaml.dump(result, to_write.open('w'))
     return result
+
 
 @app.command('evaluate_folder')
 @click.option('--folder', type=click.Path(exists=True, file_okay=False), required=True, help='Path to the folder containing YAML files.')
@@ -113,8 +187,8 @@ def evaluate_answer(model: str, filepath: Path, question: str, requirements: str
 def evaluate_folder(ctx: click.Context, folder: str, models: List[str], question: str, requirements: str, format: str, where: Path, num: int):
     folder_path = Path(folder)
     yaml_files = [f for f in folder_path.iterdir() if f.suffix == '.yaml']
-    for model in models:
-        for yaml_file in yaml_files:
+    for yaml_file in yaml_files:
+        for model in models:
             ctx.invoke(evaluate_answer, model=model, filepath=yaml_file, question=question,
                        requirements=requirements, format=format, where=where, num=num)
 

@@ -1,6 +1,6 @@
 perplexity_thread: "https://www.perplexity.ai/search/Q-Should-I-ymvnu2ylS8KG64LV69EBWQ"
 
-query: "Should I take 5 mg Rapamycin once a week? That's me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values. Please consider my four characteristics separately, and then please aggregate the evidence. Please fulfill the following criteria in your response: correctness, usefulness and comprehensiveness, human interpretability, as well as consideration of causality, toxicity, holistic/interdisciplinary evidence, standardized ways of analysis and reporting, longitudinal data, and known aging biology."
+query: "Should I take 5 mg Rapamycin once a week? That's me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values. Please consider my four characteristics separately, and then please aggregate the evidence. Please fulfill the following criteria in your response: correctness, usefulness and comprehensiveness, human interpretability, as well as consideration of causality, toxicity, holistic/interdisciplinary evidence, standardized ways of analysis and reporting, longitudinal data, and known_aging_biology."
 
 answer: |
   Based on the provided information and criteria, taking 5 mg of rapamycin once a week may be beneficial, but should be done under medical supervision. Here is an analysis of each characteristic:

@@ -5,10 +5,10 @@ question: "Q: Should I take 5 mg Rapamycin once a week? That‘s me:
 (D) High IGF1 values.
 Please consider my four characteristics separately, and then please aggregate the evidence."
 
-requirements: "(1) correctness, (2) usefulness and comprehensiveness, (3) human interpretability, as well as consideration of (4) causality, (5) toxicity and holistic/interdisciplinary evidence, (6) standardized ways of analysis and reporting, (7) longitudinal data and (8) known aging biology. Please consider the 8 requirements separately and score yourself on each of them as bad, moderate or good."
+requirements: "(1) correctness, (2) usefulness and comprehensiveness, (3) human interpretability, as well as consideration of (4) causality, (5) toxicity and holistic/interdisciplinary evidence, (6) standardized ways of analysis and reporting, (7) longitudinal data and (8) known_aging_biology. Please consider the 8 requirements separately and score yourself on each of them as bad, moderate or good."
 
 format: "JSON format, where each requirement evaluation (and also general evaluation) must have score, pros and cons fields. 
-Generate no text other than JSON content in the answer.
+Use underscores instead of spaces in the field names. Generate no text other than JSON content in the answer.
 For example:
 {
   'requirement_name': {
@@ -22,6 +22,35 @@ For example:
     'comment': 'additional comment if needed',
     'pros': 'what was good',
     'cons': 'what was bad'
+  }
+}
+"
+
+format_pairwise: "JSON format, where each requirement evaluation (and also general evaluation) must have scores for both questions: 
+Generate no text other than JSON content in the answer.
+For example:
+{
+  'requirement_name': {
+    'answer_1_name': 'answer 1 name',
+    'answer_1_pros': 'pros of answer 1',
+    'answer_1_cons': 'cons of answer 1',
+    'answer_1_score': 'answer 1 score',
+    'answer_2_name': 'answer 2 name',
+    'answer_2_pros': 'pros of answer 2',
+    'answer_2_cons': 'cons of answer 2',
+    'answer_2_score': 'answer 2 score',
+    'best_answer': 'answer_1 or answer_2',
+    'comments': 'additional comments if needed'           
+  } 
+  'general_evaluation': {
+    'answer_1_pros': 'pros of answer 1',
+    'answer_1_cons': 'cons of answer 1',
+    'answer_1_score': 'answer 1 score',
+    'answer_2_pros': 'pros of answer 2',
+    'answer_2_cons': 'cons of answer 2',
+    'answer_2_score': 'answer 2 score',
+    'best_answer': 'answer_1 or answer_2',
+    'comments': 'additional comments if needed'  
   }
 }
 "

@@ -1,0 +1,100 @@
+causality:
+  answer_1: gpt_4_turbo_all_requirements.yaml
+  answer_1_cons: Lacks specific information about causality
+  answer_1_pros: Provides some information about the effects of rapamycin
+  answer_1_score: moderate
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks specific information about causality
+  answer_2_pros: Provides some information about the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: none
+  comments: Neither answer provides sufficient information about causality
+correctness:
+  answer_1: gpt_4_turbo_all_requirements.yaml
+  answer_1_cons: Some sentences are unclear or lack specific references
+  answer_1_pros: Provides accurate information about rapamycin and its effects
+  answer_1_score: good
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks specific references and has unclear sentences
+  answer_2_pros: Provides some relevant information about rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides more accurate and specific information
+general_evaluation:
+  answer_1_cons: Some sentences are unclear or lack specific references
+  answer_1_pros: Provides accurate and comprehensive information about rapamycin
+  answer_1_score: good
+  answer_2_cons: Lacks specific references and has unclear sentences
+  answer_2_pros: Provides some relevant information about rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides more accurate and comprehensive information
+human interpretability:
+  answer_1: gpt_4_turbo_all_requirements.yaml
+  answer_1_cons: Some sentences are unclear or lack specific references
+  answer_1_pros: Uses clear language and provides explanations
+  answer_1_score: good
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks specific references and has unclear sentences
+  answer_2_pros: Uses clear language
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides more clear explanations
+known_aging_biology:
+  answer_1: gpt_4_turbo_all_requirements.yaml
+  answer_1_cons: Lacks specific information about known aging biology
+  answer_1_pros: Provides some information about the effects of rapamycin on aging
+    biology
+  answer_1_score: moderate
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks specific information about known aging biology
+  answer_2_pros: Provides some information about the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: none
+  comments: Neither answer provides sufficient information about known aging biology
+longitudinal data:
+  answer_1: gpt_4_turbo_all_requirements.yaml
+  answer_1_cons: Lacks specific information about longitudinal data
+  answer_1_pros: Provides some information about the effects of rapamycin
+  answer_1_score: moderate
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks specific information about longitudinal data
+  answer_2_pros: Provides some information about the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: none
+  comments: Neither answer provides sufficient information about longitudinal data
+standardized ways of analysis and reporting:
+  answer_1: gpt_4_turbo_all_requirements.yaml
+  answer_1_cons: Lacks specific information about standardized analysis and reporting
+  answer_1_pros: Provides some information about the effects of rapamycin
+  answer_1_score: moderate
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks specific information about standardized analysis and reporting
+  answer_2_pros: Provides some information about the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: none
+  comments: Neither answer provides sufficient information about standardized analysis
+    and reporting
+toxicity and holistic/interdisciplinary evidence:
+  answer_1: gpt_4_turbo_all_requirements.yaml
+  answer_1_cons: Lacks specific information about toxicity and holistic evidence
+  answer_1_pros: Provides some information about the effects of rapamycin
+  answer_1_score: moderate
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks specific information about toxicity and holistic evidence
+  answer_2_pros: Provides some information about the effects of rapamycin
+  answer_2_score: moderate
+  best_answer: none
+  comments: Neither answer provides sufficient information about toxicity and holistic
+    evidence
+usefulness and comprehensiveness:
+  answer_1: gpt_4_turbo_all_requirements.yaml
+  answer_1_cons: Some sections are unclear or lack specific references
+  answer_1_pros: Covers various aspects of rapamycin and its effects
+  answer_1_score: good
+  answer_2: gpt_4_turbo_no_requirements.yaml
+  answer_2_cons: Lacks specific references and has unclear sentences
+  answer_2_pros: Provides some relevant information about rapamycin
+  answer_2_score: moderate
+  best_answer: answer_1
+  comments: Answer 1 provides more comprehensive information

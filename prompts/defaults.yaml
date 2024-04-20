@@ -27,7 +27,7 @@ For example:
 "
 
 format_pairwise: "JSON format, where each requirement evaluation (and also general evaluation) must have scores for both questions: 
-Generate no text other than JSON content in the answer.
+Use underscores instead of spaces in the field names. Generate no text other than JSON content in the answer.
 For example:
 {
   'requirement_name': {

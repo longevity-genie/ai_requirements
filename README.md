@@ -36,5 +36,8 @@ micromamba activate ai_requirements
 
 # Generating pair-wise comparisons
 
+To compare answer against all other answers in the folder use:
+
 ```
+python evaluate.py compare_answer_against_folder --answer_1 /home/antonkulaga/sources/ai_requirements/data/input/rapamycin_perplexity_yaml/general/claude_opus_all_requirements.yaml --folder /home/antonkulaga/sources/ai_requirements/data/input/rapamycin_perplexity_yaml/general
 ```

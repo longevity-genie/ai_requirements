@@ -1,9 +1,11 @@
+import json
 import os
 
+import polars as pl
 import yaml
 import click
 from pathlib import Path
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 from langchain_openai import ChatOpenAI
 from langchain_anthropic.experimental import ChatAnthropic
 from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
@@ -15,12 +17,21 @@ from langchain.chains import LLMChain
 load_environment_keys(usecwd=True)
 base = Path(".")
 data = base / "data"
+input = data / "input"
+output = data / "output"
+self_evaluations = output / "self_evaluations"
+perplexity_yaml = input / "rapamycin_perplexity_yaml"
+
 prompts = base / "prompts"
 
 defaults = yaml.safe_load((prompts / "defaults.yaml").open('r'))
 default_question = defaults["question"]
 default_requirements = defaults["requirements"]
 default_format = defaults["format"]
+
+default_answer = perplexity_yaml / 'claude_opus' / "claude_opus_all_requirements.yaml"
+
+default_models = ["claude-3-opus-20240229", "gpt-4-turbo"]
 
 #setting up prompt and output parser
 prompt_evaluate_answer = load_prompt(path =prompts / "self_evaluate.yaml")
@@ -29,6 +40,8 @@ output_parser = JsonOutputParser()
 #setting up OpenAI
 model_gpt_4 = ChatOpenAI(model="gpt-4-turbo", temperature=0.0)
 chain_evaluate_answer_gpt_4: LLMChain = prompt_evaluate_answer | model_gpt_4 | output_parser
+
+
 
 #setting up Claude
 model_claude = ChatAnthropic(model="claude-3-opus-20240229", temperature=0.0)
@@ -56,19 +69,21 @@ def extract_fields(yaml_file: Path) -> Dict[str, Optional[Any]]:
         return extracted_data
 
 
-@click.group()
-def cli():
-    """Simple CLI for processing YAML files."""
+@click.group(invoke_without_command=True)
+@click.pass_context
+def app(ctx):
     pass
 
-@cli.command("test")
+@app.command("evaluate_answer")
 @click.option('--model', default = "claude-3-opus", help="the model to use for evaluation, claude-3-opus by default")
+@click.argument('filepath', default = default_answer, type=click.Path(exists=True, dir_okay=False, path_type=Path))
 @click.option('--question', default = default_question, help="question that we asked the model")
 @click.option('--requirements', default = default_requirements, help="criteria that we used for evaluation")
 @click.option('--format', default = default_format, help="criteria to format the answer")
-def test(model: str, question: str, requirements: str, format: str):
-    example = data / "rapamycin" / 'claude_opus' / "claude_opus_all_requirements.yaml"
-    dic = extract_fields(example)
+@click.option("--where", default=self_evaluations, type=click.Path(exists=True, dir_okay=True, path_type=Path), help="folder where to write output")
+@click.option("--num", default = 0, type=click.INT)
+def evaluate_answer(model: str, filepath: Path, question: str, requirements: str, format: str, where: Path, num: int):
+    dic = extract_fields(filepath)
     response = str(dic)
 
     input = {
@@ -80,26 +95,81 @@ def test(model: str, question: str, requirements: str, format: str):
     chain = chain_evaluate_answer_claude_opus if "claude" in model else chain_evaluate_answer_gpt_4
     result = chain.invoke(input)
     click.echo(f"RESULT:\n {result}")
+    number_suffix = "" if num == 0 else "_" + str(num)
+    to_write = where / f"evaluation_{filepath.stem}_{model}{number_suffix}.yaml"
+    click.echo(f"Writing to: {to_write}")
+    yaml.dump(result, to_write.open('w'))
     return result
 
+@app.command('evaluate_folder')
+@click.option('--folder', type=click.Path(exists=True, file_okay=False), required=True, help='Path to the folder containing YAML files.')
+@click.option('--models', multiple=True, default=default_models, help='List of model names to evaluate.')
+@click.option('--question', default = default_question, help="question that we asked the model")
+@click.option('--requirements', default = default_requirements, help="criteria that we used for evaluation")
+@click.option('--format', default = default_format, help="criteria to format the answer")
+@click.option("--where", default=self_evaluations, type=click.Path(exists=True, dir_okay=True, path_type=Path), help="folder where to write output")
+@click.option("--num", default = 0, type=click.INT)
+@click.pass_context
+def evaluate_folder(ctx: click.Context, folder: str, models: List[str], question: str, requirements: str, format: str, where: Path, num: int):
+    folder_path = Path(folder)
+    yaml_files = [f for f in folder_path.iterdir() if f.suffix == '.yaml']
+    for model in models:
+        for yaml_file in yaml_files:
+            ctx.invoke(evaluate_answer, model=model, filepath=yaml_file, question=question,
+                       requirements=requirements, format=format, where=where, num=num)
 
+@app.command("make_table")
+@click.option('--directory', type=click.Path(exists=True, file_okay=False, dir_okay=True),
+              help="Directory containing YAML files.")
+@click.option('--output', type=click.Path(path_type=Path), default='comparison_table.tsv',
+              help="Output CSV file name.")
+def make_table(directory: str, output: str) -> Path:
+    """ Process YAML files in the specified directory to generate a comparison table using Polars. """
+    path = Path(directory)
+    yaml_files = list(path.glob('*.yaml'))
 
+    if not yaml_files:
+        click.echo("No YAML files found in the directory.")
+        return
 
-@cli.command()
-@click.argument('filepath', type=click.Path(exists=True, dir_okay=False, path_type=Path))
-def extract(filepath: Path):
-    """
-    Extracts and prints 'answer' and 'sources' from a specified YAML file.
+    # Load the first file to determine the columns (requirement names)
+    with open(yaml_files[0], 'r') as f:
+        first_file_data = yaml.safe_load(f)
+        if not first_file_data:
+            click.echo(f"No data found in file: {yaml_files[0].name}")
+            return
+        columns = list(first_file_data.keys())
 
-    Args:
-        filepath (Path): The path to the YAML file to be processed.
-    """
-    result = extract_fields(filepath)
-    click.echo(f"Answer: {result['answer']}")
-    if result['sources']:
-        click.echo(f"Sources: {result['sources']}")
+    records: List[Dict[str, str]] = []
+
+    # Process each YAML file
+    for file in yaml_files:
+        click.echo(f"Processing file: {file.name}")  # Debug: file being processed
+        with open(file, 'r') as f:
+            try:
+                data: Dict[str, Dict[str, str]] = yaml.safe_load(f)
+            except yaml.YAMLError as exc:
+                click.echo(f"Error parsing YAML file {file.name}: {exc}")
+                continue
+
+        # Prepare a record dict starting with the filename
+        record: Dict[str, str] = {'filename': file.stem}
+
+        # Extract the score for each requirement
+        for column in columns:
+            score = data.get(column, {}).get('score', 'N/A')  # Default to 'N/A' if no score found
+            record[column] = score
+
+        records.append(record)
+
+    # Create a DataFrame and write to CSV
+    if records:
+        df = pl.DataFrame(records)
+        df.write_csv(path / output, separator="\t")
+        click.echo(f"Comparison table generated and saved to {output}")
     else:
-        click.echo("Sources: None")
+        click.echo("No records found. No CSV generated.")
+
 
 if __name__ == "__main__":
-    cli()
+    app()

@@ -1,0 +1,5 @@
+filename	causality	correctness	general_evaluation	human_interpretability	known_aging_biology	longitudinal_data	standardized_analysis_and_reporting	toxicity_and_holistic_evidence	usefulness_and_comprehensiveness
+evaluation_mistral_large_all_requirements_gpt-4-turbo	moderate	good	good	good	good	moderate	moderate	moderate	good
+evaluation_mistral_large_no_requirements_claude-3-opus-20240229	moderate	moderate	moderate	good	moderate	bad	moderate	bad	moderate
+evaluation_mistral_large_all_requirements_claude-3-opus-20240229	moderate	good	good	good	good	moderate	moderate	good	good
+evaluation_mistral_large_no_requirements_gpt-4-turbo	moderate	good	moderate	good	good	bad	moderate	moderate	moderate

@@ -1,0 +1,39 @@
+query: "Should I take 5 mg Rapamycin once a week? That‘s me: (A) 50 year old male (B) Moderately overweight (C) Slow vaccination response (D) High IGF1 values."
+
+answer:
+  summary: Based on the provided search results, there is some evidence to suggest that taking 5 mg of rapamycin once a week may be beneficial for individuals with slow vaccination response and high IGF1 values. However, there is limited information on the effects of rapamycin for moderately overweight individuals, and the optimal dosage may vary depending on individual factors. It is important to consult with a healthcare professional before starting any new medication or treatment regimen.
+  details:
+    - characteristic: 50 year old male
+      relevant_sources:
+        - index: 3
+          text: "264 adults age ≥ 65 years Everolimus 0.5 mg daily Everolimus 5 mg weekly Everolimus 20 mg weekly Placebo 6 weeks Phase 2, randomized, single observer blinded, placebo-controlled Improvement in influenza vaccination response Yes for 0.5 mg daily and 5 mg weekly Mannick et al. 2014"
+      summary: A study found that taking 5 mg of rapamycin (everolimus) once a week improved influenza vaccination response in adults aged 65 and older.
+    - characteristic: Moderately overweight
+      relevant_sources:
+        - index: 1
+          text: "Here we sought to compare several routes of rapamycin administration using prevention of obesity on high fat diet (HFD) as a biomarker. In addition, we sought to determine the effect of rapamycin on glucose and insulin levels in mice on HFD. We found that intraperitoneal (i.p.) injections of rapamycin prevented weight gain on HFD, whereas rapamycin by gavage (also given 3 times per 2 weeks) did not. Orally administrated (gavage) rapamycin has poor bioavailability. The i.p. route of its administration ensures high peak of systemic levels of rapamycin. We can conclude that acute high levels of rapamycin may be necessary to prevent obesity."
+      summary: There is limited information on the effects of rapamycin for moderately overweight individuals. One study found that intraperitoneal injections of rapamycin prevented weight gain on a high-fat diet in mice, but the effects in humans are unclear.
+    - characteristic: Slow vaccination response
+      relevant_sources:
+        - index: 3
+          text: "264 adults age ≥ 65 years Everolimus 0.5 mg daily Everolimus 5 mg weekly Everolimus 20 mg weekly Placebo 6 weeks Phase 2, randomized, single observer blinded, placebo-controlled Improvement in influenza vaccination response Yes for 0.5 mg daily and 5 mg weekly Mannick et al. 2014"
+      summary: A study found that taking 5 mg of rapamycin (everolimus) once a week improved influenza vaccination response in adults aged 65 and older.
+    - characteristic: High IGF1 values
+      relevant_sources:
+        - index: 4
+          text: "Rapamycin is a potent inhibitor of the mammalian target of rapamycin (mTOR), a key regulator of cell growth and metabolism. Inhibition of mTOR by rapamycin has been shown to extend lifespan and improve healthspan in various model organisms, including mice. Rapamycin has also been shown to reduce IGF1 signaling, which is a key pathway involved in aging and age-related diseases. In a study of elderly humans, rapamycin was found to be safe and well-tolerated at doses up to 1 mg/day for several weeks. A recent study found that taking 5 mg of rapamycin once a week improved immune function in healthy older adults."
+      summary: Rapamycin has been shown to reduce IGF1 signaling, which is a key pathway involved in aging and age-related diseases. A recent study found that taking 5 mg of rapamycin once a week improved immune function in healthy older adults.
+  conclusion: Based on the provided search results, there is some evidence to suggest that taking 5 mg of rapamycin once a week may be beneficial for individuals with slow vaccination response and high IGF1 values. However, there is limited information on the effects of rapamycin for moderately overweight individuals, and the optimal dosage may vary depending on individual factors. It is important to consult with a healthcare professional before starting any new medication or treatment regimen.
+sources:
+  - index: 1
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/
+    used_text: "Here we sought to compare several routes of rapamycin administration using prevention of obesity on high fat diet (HFD) as a biomarker. In addition, we sought to determine the effect of rapamycin on glucose and insulin levels in mice on HFD. We found that intraperitoneal (i.p.) injections of rapamycin prevented weight gain on HFD, whereas rapamycin by gavage (also given 3 times per 2 weeks) did not. Orally administrated (gavage) rapamycin has poor bioavailability. The i.p. route of its administration ensures high peak of systemic levels of rapamycin. We can conclude that acute high levels of rapamycin may be necessary to prevent obesity."
+  - index: 2
+    url: https://www.rapamycin.news/t/what-is-the-rapamycin-dose-dosage-for-anti-aging-or-longevity/102
+    used_text: "Note: Most users taking rapamycin for anti-aging, take between 3mg and 10mg per week, on a once-weekly dosing schedule. Our forum software doesn’t accommodate conditional branching in these surveys, but most of the doses above 10mg are likely people who are dosing once every 10 days or 2 weeks, so an effective weekly dose of between 5 and 10mg per week. A few people are trying much higher dosing levels."
+  - index: 3
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10643772/
+    used_text: "264 adults age ≥ 65 years Everolimus 0.5 mg daily Everolimus 5 mg weekly Everolimus 20 mg weekly Placebo 6 weeks Phase 2, randomized, single observer blinded, placebo-controlled Improvement in influenza vaccination response Yes for 0.5 mg daily and 5 mg weekly Mannick et al. 2014"
+  - index: 4
+    url: https://www.aging-us.com/article/102355/text
+    used_text: "Rapamycin is a potent inhibitor of the mammalian target of rapamycin (mTOR), a key regulator of cell growth and metabolism. Inhibition of mTOR by rapamycin has been shown to extend lifespan and improve healthspan in various model organisms, including mice. Rapamycin has also been shown to reduce IGF1 signaling, which is a key pathway involved in aging and age-related diseases. In a study of elderly humans, rapamycin was found to be safe and well-tolerated at doses up to 1 mg/day for several weeks. A recent study found that taking 5 mg of rapamycin once a week improved immune function in healthy older adults."

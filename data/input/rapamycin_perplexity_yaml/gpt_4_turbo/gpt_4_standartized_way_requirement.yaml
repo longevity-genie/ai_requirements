@@ -13,7 +13,7 @@ answer: |
 
   Aggregated evidence: While there is some evidence supporting the use of Rapamycin for anti-aging and improving immune response, the data is not sufficient to make a definitive recommendation for its use, especially considering the potential side effects and lack of FDA approval for longevity purposes[19]. It is essential to consult with a healthcare provider before starting any new medication regimen, including Rapamycin, to evaluate the potential benefits and risks based on your health status and medical history.
 
-  Standardized ways of analysis and reporting: The analysis of the evidence has been conducted by reviewing the available literature and studies, considering the quality of the sources, the relevance to the query, and the consistency of the findings across different studies.
+  standardized_analysis_and_reporting: The analysis of the evidence has been conducted by reviewing the available literature and studies, considering the quality of the sources, the relevance to the query, and the consistency of the findings across different studies.
 
 sources:
   - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4614913/"

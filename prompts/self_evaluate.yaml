@@ -1,4 +1,5 @@
 input_variables: [question, response, requirements, format]
+_type: "prompt"
 output_parser: null
 template: "You responded to the question: 
 The question was: ```{question}```

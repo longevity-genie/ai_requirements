@@ -37,7 +37,7 @@ human_interpretability:
   answer_2_score: good
   best_answer: answer_2
   comments: Answer 2 is more accessible to a general audience.
-toxicity_and_holistic_interdisciplinary_evidence:
+toxicity_and_holistic_evidence:
   answer_1_cons: Does not provide a comprehensive overview of the drug's toxicity
     profile.
   answer_1_name: claude_opus_all_requirements.yaml

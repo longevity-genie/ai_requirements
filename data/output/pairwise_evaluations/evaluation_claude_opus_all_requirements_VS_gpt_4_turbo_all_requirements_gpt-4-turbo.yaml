@@ -70,7 +70,7 @@ longitudinal_data:
   answer_2_score: moderate
   best_answer: answer_1
   comments: Both answers could improve in presenting and discussing longitudinal data.
-standardized_ways_of_analysis_and_reporting:
+standardized_analysis_and_reporting:
   answer_1_cons: Could standardize the citation and evidence presentation further.
   answer_1_name: claude_opus_all_requirements.yaml
   answer_1_pros: Uses a structured approach to analyze each characteristic.
@@ -81,7 +81,7 @@ standardized_ways_of_analysis_and_reporting:
   answer_2_score: moderate
   best_answer: answer_1
   comments: Answer 1 uses a more systematic approach to discussing each point.
-toxicity_and_holistic_interdisciplinary_evidence:
+toxicity_and_holistic_evidence:
   answer_1_cons: Could include more on long-term toxicity and interdisciplinary perspectives.
   answer_1_name: claude_opus_all_requirements.yaml
   answer_1_pros: Mentions side effects and the need for medical supervision.

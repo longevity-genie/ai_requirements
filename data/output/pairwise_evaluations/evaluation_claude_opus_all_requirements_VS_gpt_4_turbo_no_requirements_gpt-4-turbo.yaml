@@ -68,7 +68,7 @@ longitudinal_data:
   best_answer: answer_1
   comments: Both answers could improve in this area, but Answer 1 slightly edges out
     with more references to long-term effects.
-standardized_ways_of_analysis_and_reporting:
+standardized_analysis_and_reporting:
   answer_1_cons: Could benefit from a more standardized reporting format.
   answer_1_name: claude_opus_all_requirements.yaml
   answer_1_pros: Uses a structured approach with detailed references.
@@ -80,7 +80,7 @@ standardized_ways_of_analysis_and_reporting:
   best_answer: answer_1
   comments: Answer 1's methodical approach with detailed citations provides a more
     reliable analysis.
-toxicity_and_holistic_interdisciplinary_evidence:
+toxicity_and_holistic_evidence:
   answer_1_cons: Could integrate more interdisciplinary perspectives.
   answer_1_name: claude_opus_all_requirements.yaml
   answer_1_pros: Considers side effects and interactions with other medications.

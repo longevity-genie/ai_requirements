@@ -46,7 +46,7 @@ human_interpretability:
   best_answer: answer_1
   comments: Answer 1 provides a more accessible and easily interpretable analysis
     for a general audience.
-toxicity_and_holistic_interdisciplinary_evidence:
+toxicity_and_holistic_evidence:
   answer_1_name: claude_opus_all_requirements.yaml
 usefulness_and_comprehensiveness:
   answer_1_cons: Some additional details or examples could further enhance the usefulness

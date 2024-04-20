@@ -88,7 +88,7 @@ standardized ways of analysis and reporting:
   answer_2_score: bad
   best_answer: answer_1
   comments: Answer 1 provides a clear and structured analysis of each characteristic.
-toxicity:
+toxicity_and_holistic_evidence:
   answer_1: claude_opus_all_requirements.yaml
   answer_1_cons: Could provide more detailed information on toxicity
   answer_1_pros: Mentions potential side effects and interactions of rapamycin

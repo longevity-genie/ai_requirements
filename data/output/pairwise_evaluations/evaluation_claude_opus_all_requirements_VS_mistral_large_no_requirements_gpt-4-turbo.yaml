@@ -67,7 +67,7 @@ longitudinal_data:
   answer_2_score: bad
   best_answer: answer_1
   comments: Answer 1 slightly better addresses the aspect of longitudinal data
-standardized_ways_of_analysis_and_reporting:
+standardized_analysis_and_reporting:
   answer_1_cons: Could standardize the citation format and clarity of source relevance
   answer_1_name: claude_opus_all_requirements.yaml
   answer_1_pros: Uses a consistent format for analyzing and reporting on each characteristic

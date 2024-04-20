@@ -80,7 +80,7 @@ longitudinal_data:
   best_answer: gpt_4_turbo_all_requirements.yaml
   comments: The second answer provides a more comprehensive analysis of the longitudinal
     effects of rapamycin
-standardized_ways_of_analysis_and_reporting:
+standardized_analysis_and_reporting:
   answer_1_cons: May not fully adhere to standardized ways of analysis and reporting
   answer_1_name: claude_opus_all_requirements.yaml
   answer_1_pros: Provides a clear and concise analysis
@@ -93,7 +93,7 @@ standardized_ways_of_analysis_and_reporting:
   best_answer: gpt_4_turbo_all_requirements.yaml
   comments: The second answer provides a more comprehensive analysis that adheres
     to standardized ways of analysis and reporting
-toxicity:
+toxicity_and_holistic_evidence:
   answer_1_cons: May not fully explore the toxicity of rapamycin
   answer_1_name: claude_opus_all_requirements.yaml
   answer_1_pros: Mentions some potential side effects of rapamycin

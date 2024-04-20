@@ -73,7 +73,7 @@ longitudinal_data:
   answer_2_score: bad
   best_answer: answer_1
   comments: Answer 1 provides more information on longitudinal data
-standardized_ways_of_analysis_and_reporting:
+standardized_analysis_and_reporting:
   answer_1: claude_opus_all_requirements.yaml
   answer_1_cons: Could provide more standardized analysis and reporting
   answer_1_pros: Provides clear and structured information
@@ -84,7 +84,7 @@ standardized_ways_of_analysis_and_reporting:
   answer_2_score: bad
   best_answer: answer_1
   comments: Answer 1 provides more standardized analysis and reporting
-toxicity:
+toxicity_and_holistic_evidence:
   answer_1: claude_opus_all_requirements.yaml
   answer_1_cons: Could provide more information on toxicity
   answer_1_pros: Mentions potential side effects and interactions

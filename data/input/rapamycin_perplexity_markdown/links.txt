@@ -1,0 +1,6 @@
+Claude 3 Sonnet without requirements: https://www.perplexity.ai/search/Q-Should-I-Ztbt1jLqSsGqNwx35CCYJQ 
+Claude 3 Sonnet with requirements: https://www.perplexity.ai/search/Q-Should-I-MziWLvafQ76JkQ7ShLUIXA 
+Chat GPT Turbo  without requirements: https://www.perplexity.ai/search/Q-Should-I-36SESHVBSLqBuxa7VSNhcg 
+Chat GPT Turbo with requirements: https://www.perplexity.ai/search/Q-Should-I-_OWYIo.nRjOpNf1A8ffaBQ 
+Mistral Large without requirements: https://www.perplexity.ai/search/Q-Should-I-5fwhJNh7TQGJ5iq8Wz_pxQ 
+Mistral Large with requirements: https://www.perplexity.ai/search/Q-Should-I-6wxIzMQjQKumPQYhuAb5og

@@ -86,7 +86,7 @@ longitudinal_data:
   best_answer: answer_1
   comments: Answer 1 provides some information on the longitudinal data, making it
     a better answer.
-standardized_ways_of_analysis_and_reporting:
+standardized_analysis_and_reporting:
   answer_1_cons: Could provide more detailed information on the standardized ways
     of analysis and reporting
   answer_1_name: claude_opus_all_requirements.yaml
@@ -99,7 +99,7 @@ standardized_ways_of_analysis_and_reporting:
   best_answer: answer_1
   comments: Answer 1 provides a clear and structured analysis of the requirements,
     making it a better answer.
-toxicity:
+toxicity_and_holistic_evidence:
   answer_1_cons: Could provide more detailed information on the toxicity of rapamycin
   answer_1_name: claude_opus_all_requirements.yaml
   answer_1_pros: Discusses the potential side effects and toxicity of rapamycin

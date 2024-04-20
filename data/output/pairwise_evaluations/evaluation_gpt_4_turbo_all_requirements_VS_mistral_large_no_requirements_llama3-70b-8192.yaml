@@ -100,7 +100,7 @@ standardized ways of analysis and reporting:
   best_answer: answer_1
   comments: Answer 1 provides a clear and concise analysis, but lacks a standardized
     way of analysis and reporting
-toxicity:
+toxicity_and_holistic_evidence:
   answer_1: gpt_4_turbo_all_requirements.yaml
   answer_1_cons: Lacks a comprehensive analysis of the toxicity of rapamycin
   answer_1_pros: Mentions the potential side effects of rapamycin

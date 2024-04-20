@@ -46,7 +46,7 @@ human_interpretability:
   best_answer: answer_1
   comments: Answer 1 is more accessible to a general audience, while Answer 2 might
     require more background knowledge.
-toxicity_and_holistic_interdisciplinary_evidence: {}
+toxicity_and_holistic_evidence: {}
 usefulness_and_comprehensiveness:
   answer_1_cons: Could include more specific guidance on how to consult with a healthcare
     provider and what aspects to monitor.

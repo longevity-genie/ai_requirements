@@ -151,8 +151,10 @@ def evaluate_folder(ctx: click.Context, folder: str, models: List[str], question
 @click.option("--where", default=self_evaluations, type=click.Path(exists=True, dir_okay=True, path_type=Path), help="folder where to write output")
 @click.option("--num", default = 0, type=click.INT)
 def evaluate_answer(model: str, filepath: Path, question: str, requirements: str, format: str, where: Path, num: int):
-    dic = extract_fields(filepath)
-    response = str(dic)
+    if filepath.suffix == ".md":
+        response = filepath.read_text()
+    else:
+        response = str(extract_fields(filepath))
     input = {
         "question" : question,
         "response" : response,
@@ -164,7 +166,6 @@ def evaluate_answer(model: str, filepath: Path, question: str, requirements: str
     elif "gpt" in model:
         chain = chain_evaluate_answer_gpt_4
     else:
-        print("LLAMA BABY!")
         chain = chain_evaluate_answer_llama_3
     result = chain.invoke(input)
     click.echo(f"RESULT:\n {result}")
@@ -186,18 +187,43 @@ def evaluate_answer(model: str, filepath: Path, question: str, requirements: str
 @click.pass_context
 def evaluate_folder(ctx: click.Context, folder: str, models: List[str], question: str, requirements: str, format: str, where: Path, num: int):
     folder_path = Path(folder)
-    yaml_files = [f for f in folder_path.iterdir() if f.suffix == '.yaml']
-    for yaml_file in yaml_files:
+    yaml_files = [f for f in folder_path.iterdir() if f.suffix == '.yaml' or f.suffix == '.md']
+    for yaml_file in yaml_files: #can also be .md files
         for model in models:
             ctx.invoke(evaluate_answer, model=model, filepath=yaml_file, question=question,
                        requirements=requirements, format=format, where=where, num=num)
+
+
+import re
+
+def parse_filename(filename: str) -> dict:
+    """
+    Parses the given filename to extract key components based on a predefined pattern.
+
+    Args:
+    filename (str): The filename to parse.
+
+    Returns:
+    dict: A dictionary containing the parsed components or an error message if the pattern does not match.
+    """
+    # Define the regex pattern that matches the expected filename structure
+    pattern = r'evaluation_(?P<model_that_produced_the_result>.+?)_(?P<requirements_type>with|without)_requirements_(?P<model_that_evaluated_result>.+)'
+
+    # Attempt to match the pattern with the filename (excluding the file extension if present)
+    match = re.match(pattern, filename.split('.')[0])
+
+    if match:
+        return match.groupdict()
+    else:
+        return {"error": "Filename pattern does not match expected format."}
 
 @app.command("make_table")
 @click.option('--directory', type=click.Path(exists=True, file_okay=False, dir_okay=True),
               help="Directory containing YAML files.")
 @click.option('--output', type=click.Path(path_type=Path), default='comparison_table.tsv',
               help="Output CSV file name.")
-def make_table(directory: str, output: str) -> Path:
+@click.option('--add-cols', is_flag=True, help="Add additional columns from filename parsing.")
+def make_table(directory: str, output: str, add_cols: bool) -> Path:
     """ Process YAML files in the specified directory to generate a comparison table using Polars. """
     path = Path(directory)
     yaml_files = list(path.glob('*.yaml'))
@@ -233,8 +259,15 @@ def make_table(directory: str, output: str) -> Path:
         for column in columns:
             score = data.get(column, {}).get('score', 'N/A')  # Default to 'N/A' if no score found
             record[column] = score
-
+        # Optionally add additional columns from filename parsing
+        if add_cols:
+            filename_info = parse_filename(file.name)
+            if 'error' not in filename_info:
+                record.update(filename_info)
+            else:
+                click.echo(f"Error parsing filename: {file.name}")
         records.append(record)
+
 
     # Create a DataFrame and write to CSV
     if records:

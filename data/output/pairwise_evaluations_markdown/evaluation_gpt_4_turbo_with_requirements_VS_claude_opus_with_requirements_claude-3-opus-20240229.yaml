@@ -1,0 +1,65 @@
+causality:
+  answer_1_cons: Could more explicitly caution against assuming causality translates
+    from animal models to humans.
+  answer_1_name: gpt_4_turbo_with_requirements.md
+  answer_1_pros: Acknowledges limitations in establishing causality from animal studies.
+    Notes that human data is limited.
+  answer_1_score: moderate
+  answer_2_cons: Some areas could still note limitations more explicitly.
+  answer_2_name: claude_opus_with_requirements.md
+  answer_2_pros: Frequently notes when evidence is from animal studies vs human trials.
+    Emphasizes that effects in humans are inconsistent or unproven.
+  answer_2_score: good
+  best_answer: answer_2
+  comments: Answer 2 does a better job distinguishing causality evidence from animals
+    vs humans and noting limitations.
+correctness:
+  answer_1_cons: Some statements could benefit from additional clarification or context.
+  answer_1_name: gpt_4_turbo_with_requirements.md
+  answer_1_pros: Provides accurate information based on scientific studies and reliable
+    sources. Cites relevant research to support claims.
+  answer_1_score: good
+  answer_2_cons: A few minor inaccuracies or oversimplifications, but overall highly
+    accurate.
+  answer_2_name: claude_opus_with_requirements.md
+  answer_2_pros: Presents information that is well-supported by scientific research.
+    Draws from a wide range of credible sources.
+  answer_2_score: good
+  best_answer: answer_2
+  comments: Both answers provide accurate information, but Answer 2 has slightly fewer
+    areas that need clarification or additional context.
+human_interpretability:
+  answer_1_cons: Some medical/scientific jargon used without full explanations.
+  answer_1_name: gpt_4_turbo_with_requirements.md
+  answer_1_pros: Well-organized with clear headings. Explains scientific concepts
+    in an understandable way.
+  answer_1_score: moderate
+  answer_2_cons: A few instances of undefined acronyms or medical terminology.
+  answer_2_name: claude_opus_with_requirements.md
+  answer_2_pros: Clearly structured and easy to follow. Defines terms and explains
+    concepts well for a general audience.
+  answer_2_score: good
+  best_answer: answer_2
+  comments: Both are quite interpretable, but Answer 2 does a slightly better job
+    explaining concepts for a lay audience.
+toxicity_and_holistic_interdisciplinary_evidence:
+  answer_1_name: gpt_4_turbo_with_requirements.md
+  answer_1_pros: Discusses potential side effects and increased infection risk. Recommends
+    considering rapamycin in the broader context of overall health practices.
+usefulness_and_comprehensiveness:
+  answer_1_cons: Could provide more specific guidance on how to weigh risks vs benefits
+    and make a decision.
+  answer_1_name: gpt_4_turbo_with_requirements.md
+  answer_1_pros: Addresses each of the user's characteristics separately and provides
+    an aggregate analysis. Offers a balanced perspective, discussing both potential
+    benefits and risks.
+  answer_1_score: moderate
+  answer_2_cons: Some additional details on risk/benefit analysis and decision making
+    process could be helpful.
+  answer_2_name: claude_opus_with_requirements.md
+  answer_2_pros: Thoroughly addresses each characteristic and provides clear recommendations.
+    Gives useful context on typical rapamycin protocols and considerations.
+  answer_2_score: good
+  best_answer: answer_2
+  comments: Both answers are comprehensive, but Answer 2 provides clearer recommendations
+    and decision-making considerations.

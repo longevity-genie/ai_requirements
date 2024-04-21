@@ -98,14 +98,12 @@ def app(ctx):
 @click.option("--where", default=pairwise_evaluations, type=click.Path(exists=True, dir_okay=True, path_type=Path), help="folder where to write output")
 @click.option("--num", default = 0, type=click.INT)
 def compare_answers(model: str, answer_1: Path, answer_2: Path, question: str, requirements: str, format: str, where: Path, num: int):
-    dic_1 = extract_fields(answer_1)
-    dic_2 = extract_fields(answer_2)
     input = {
         "question" : question,
         "answer_1_name": answer_1.name,
-        "answer_1" : str(dic_1),
+        "answer_1" : read_response(answer_1),
         "answer_2_name": answer_2.name,
-        "answer_2" : str(dic_2),
+        "answer_2" : read_response(answer_2),
         "requirements": requirements,
         "format": format
     }
@@ -135,12 +133,18 @@ def compare_answers(model: str, answer_1: Path, answer_2: Path, question: str, r
 @click.pass_context
 def evaluate_folder(ctx: click.Context, folder: str, models: List[str], question: str, answer_1: Path, requirements: str, format: str, where: Path, num: int):
     folder_path = Path(folder)
-    yaml_files = [f for f in folder_path.iterdir() if f.suffix == '.yaml']
+    yaml_files = [f for f in folder_path.iterdir() if f.suffix == '.yaml' or f.suffix == ".md"]
     for yaml_file in yaml_files:
         for model in models:
             if yaml_file != answer_1:
                 ctx.invoke(compare_answers, model=model, question=question, answer_1 = answer_1, answer_2 = yaml_file,
                            requirements=requirements, format=format, where=where, num=num)
+
+def read_response(filepath: Path) -> str:
+    if filepath.suffix == ".md":
+        return filepath.read_text()
+    else:
+        return str(extract_fields(filepath))
 
 @app.command("evaluate_answer")
 @click.option('--model', default = "llama3-70b-8192", help="the model to use for evaluation, llama3-70b-8192 by default")
@@ -151,13 +155,9 @@ def evaluate_folder(ctx: click.Context, folder: str, models: List[str], question
 @click.option("--where", default=self_evaluations, type=click.Path(exists=True, dir_okay=True, path_type=Path), help="folder where to write output")
 @click.option("--num", default = 0, type=click.INT)
 def evaluate_answer(model: str, filepath: Path, question: str, requirements: str, format: str, where: Path, num: int):
-    if filepath.suffix == ".md":
-        response = filepath.read_text()
-    else:
-        response = str(extract_fields(filepath))
     input = {
         "question" : question,
-        "response" : response,
+        "response" : read_response(filepath),
         "requirements": requirements,
         "format": format
     }

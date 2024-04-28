@@ -1,0 +1,38 @@
+research_topic_task:
+  description:
+    "Use tools to provide all necessary information to address the question"
+  expected_output:
+    "The ANSWER that has all relevant information with sources to address the research question"
+
+review_answer_task:
+  description:
+    "Evaluate the ANSWER according to the following requirements: 
+    (1) correctness, 
+    (2) usefulness and comprehensiveness, 
+    (3) human interpretability
+    (4) consideration of causality
+    (5) consideration of toxicity and holistic/interdisciplinary evidence
+    (6) consideration of standardized ways of analysis and reporting
+    (7) longitudinal data 
+    (8) consideration of known_aging_biology. 
+    Please consider the 8 requirements separately and score the ANSWER on each of them as bad, moderate or good.
+    Then make a general evaluation"
+  expected_output:
+    "JSON format, where each requirement evaluation (and also general evaluation) must have score, pros and cons fields. 
+    Use underscores instead of spaces in the field names. Generate no text other than JSON content in the answer. 
+    Avoid too many words in json field names.
+    For example:
+    {{
+      'requirement_name': {{
+        'score': 'score value',
+        'comment': 'additional comment if needed',
+        'pros': 'what was good',
+        'cons': 'what was bad'
+      }} 
+      'general_evaluation': {{
+        'score': 'score value',
+        'comment': 'additional comment if needed',
+        'pros': 'what was good',
+        'cons': 'what was bad'
+      }}
+    }}"

@@ -217,6 +217,7 @@ def parse_filename(filename: str) -> dict:
     else:
         return {"error": "Filename pattern does not match expected format."}
 
+
 @app.command("make_table")
 @click.option('--directory', type=click.Path(exists=True, file_okay=False, dir_okay=True),
               help="Directory containing YAML files.")

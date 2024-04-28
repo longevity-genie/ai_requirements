@@ -10,7 +10,7 @@ dependencies:
       - openai
       - anthropic
       - pycomfort
-      - crewai
+      - crewai>=0.28.8
       - 'crewai[tools]'
       - gptcache
       - langchain>=0.1.16
@@ -23,3 +23,4 @@ dependencies:
       - xmltodict
       - polars
       - langchain-groq
+      - click

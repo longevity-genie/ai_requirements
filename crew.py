@@ -1,3 +1,4 @@
+import pprint
 from pathlib import Path
 
 import yaml
@@ -7,6 +8,7 @@ from langchain_groq import ChatGroq
 from pycomfort.config import load_environment_keys
 import click
 load_environment_keys(usecwd=True)
+
 
 base = Path(".")
 data = base / "data"
@@ -56,6 +58,16 @@ class GeroCrew:
         result.context = [self.research_topic_task()] #temporal bug-fix
         return result
 
+    @task
+    def improve_search_task(self) -> Task:
+        result = Task(
+            config=self.tasks_config['improve_search_task'],
+            agent=self.scientist()
+        )
+        result.context = [self.review_answer_task()] #temporal bug-fix
+        return result
+
+
     @crew
     def crew(self) -> Crew:
         """Creates a requirements crew"""
@@ -65,6 +77,11 @@ class GeroCrew:
             process = Process.sequential,
             verbose = 2
         )
+
+    def run(self, question: str, search_instructions: str):
+        research_output = self.research_topic_task().run().output  # Execute and capture output
+        pprint.pprint(research_output)
+        return research_output
 
 @click.group(invoke_without_command=True)
 @click.pass_context
@@ -76,7 +93,8 @@ def app(ctx):
 def run(question: str = default_question):
     crew = GeroCrew().crew()
     inputs = {
-        'question': question
+        'question': question,
+        'search_instructions': []
     }
     crew.kickoff(inputs=inputs)
 

@@ -122,7 +122,7 @@ def compare_answers(model: str, answer_1: Path, answer_2: Path, question: str, r
     return result
 
 @app.command('compare_answer_against_folder')
-@click.option('--folder', type=click.Path(exists=True, file_okay=False), required=True, help='Path to the folder containing YAML files.')
+@click.option('--folder', type=click.Path(exists=True, file_okay=False), required=True, help='Path to the folder containing YAML or markdown files.')
 @click.option('--models', multiple=True, default=default_models, help='List of model names to evaluate.')
 @click.option('--question', default = default_question, help="question that we asked the model")
 @click.option('--answer_1', default = default_answer, type=click.Path(exists=True, dir_okay=False, path_type=Path))

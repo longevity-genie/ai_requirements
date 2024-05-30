@@ -1,12 +1,25 @@
 research_topic_task:
   description:
-    "Use tools to provide all necessary information to address the question"
+    "Use tools to provide all necessary information to address the {question}. 
+    You are also provided optional search instructions {search_instructions}.
+    You give a comprehensive answer as yaml to the user question in the_answer field."
   expected_output:
-    "The ANSWER that has all relevant information with sources to address the research question"
+    "YAML answer which with the following fields:
+    the_question:
+      '{question}'
+    search_instructions:
+      '{search_instructions}'
+    the_answer: 
+      \"The ANSWER that has all relevant information with sources to address the research question.    
+      If the question is on a health topic assume that a consultation with healthcare professional was already made 
+      avoid mentioning that consultation is needed.\"
+  Follow instructions closesly and make sure that you put your answer in quotes to the_answer yaml field, Do not mess up YAML output    
+  "
+  output_file: "data/output/tasks/research_topic_task.yaml"
 
 review_answer_task:
   description:
-    "Evaluate the ANSWER according to the following requirements: 
+    "Evaluate the_answer to the_question according to the following requirements: 
     (1) correctness, 
     (2) usefulness and comprehensiveness, 
     (3) human interpretability
@@ -16,23 +29,36 @@ review_answer_task:
     (7) longitudinal data 
     (8) consideration of known_aging_biology. 
     Please consider the 8 requirements separately and score the ANSWER on each of them as bad, moderate or good.
-    Then make a general evaluation"
+    Then make a general evaluation.
+    IMPORTANT: you evaluate the quality of the answer and not options that answers may provide. 
+    For example, if the question was about pros and cons of some lifespan interventions then uou do not evaluate the quality of intervention in your assessment but you evaluate the quality of the ANSWER in addressing the QUESTION.
+    "
   expected_output:
-    "JSON format, where each requirement evaluation (and also general evaluation) must have score, pros and cons fields. 
-    Use underscores instead of spaces in the field names. Generate no text other than JSON content in the answer. 
-    Avoid too many words in json field names.
-    For example:
-    {{
-      'requirement_name': {{
-        'score': 'score value',
-        'comment': 'additional comment if needed',
-        'pros': 'what was good',
-        'cons': 'what was bad'
-      }} 
-      'general_evaluation': {{
-        'score': 'score value',
-        'comment': 'additional comment if needed',
-        'pros': 'what was good',
-        'cons': 'what was bad'
-      }}
-    }}"
+    " # YAML format: each requirement evaluation and general evaluation must have score, pros, and cons fields.
+      # Use underscores instead of spaces in field names. Generate no content other than YAML in the answer.
+      # Avoid overly long field names. 
+      # User previously known the_answer and the_question YAML fields values
+      # Example:
+      the_answer_evaluation:
+        initial_question:
+          \"the_question value\"
+        requirement_name:
+          score: 'score value'
+          comment: 'additional comment if needed'
+          pros: 'what was good in the_answer according to the requirement'
+          cons: 'what was bad in the_answer according to the requirement'
+        general_evaluation:
+          score: 'score value'
+          comment: 'additional comment if needed'
+          pros: 'what was good in the_answer'
+          cons: 'what was bad in the_answer'
+    "
+  output_file: "data/output/tasks/review_answer_task.yaml"
+
+improve_search_task:
+  description:
+    "You have previosly known the_question, the_answer and the_answer_evaluation yaml fields.
+    Generate an updated_question with additional search instructions as answer requirements that should address the problems discovered by evaluation"
+  expected_output:
+    "YAML which contains the_question, updated_question, search_instructions list as well as other_instructions to improve the quality of the answer"
+  output_file: "data/output/tasks/improve_search_task.yaml"

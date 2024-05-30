@@ -10,11 +10,10 @@ dependencies:
       - openai
       - anthropic
       - pycomfort
-      - crewai>=0.28.8
-      - 'crewai[tools]'
+      - crewai==0.30.0rc3 #- crewai>=0.28.8
+      - 'crewai[tools]==0.30.0rc3' #- 'crewai[tools]'
       - gptcache
-      - langchain>=0.1.16
-      - langchain_openai
+      - langchain>=0.1.17
       - langchain-community>=0.0.33
       - langchain-anthropic>=0.1.11
       - langchain-openai

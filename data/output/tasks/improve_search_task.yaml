@@ -1,0 +1,21 @@
+```
+the_question: "Please provide the answer"
+the_answer: "Previous answer"
+the_answer_evaluation: "Previous evaluation"
+
+updated_question: "Please provide a more detailed answer with scientific evidence, considering multiple aspects of the topic, and evaluating the credibility of sources"
+
+search_instructions:
+  - Use academic databases such as PubMed, Scopus, and Web of Science to find relevant studies
+  - Filter results to include only peer-reviewed articles and systematic reviews
+  - Evaluate the credibility of sources based on factors such as author expertise, study design, and funding sources
+  - Consider multiple aspects of the topic, including but not limited to, pathophysiology, diagnosis, treatment, and prevention
+  - Provide a comprehensive summary of the evidence, including any conflicting findings or areas of uncertainty
+
+other_instructions:
+  - Use a clear and concise writing style, avoiding technical jargon and complex terminology
+  - Provide references in a consistent format, including DOI or URL links where possible
+  - Evaluate the strength of evidence for each claim, using frameworks such as GRADE or Cochrane
+  - Consider the relevance and applicability of the evidence to real-world scenarios and clinical practice
+```
+I hope this meets your requirements!

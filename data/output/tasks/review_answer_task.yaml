@@ -1,0 +1,47 @@
+the_answer_evaluation:
+  initial_question: "the_question value"
+  correctness:
+    score: 'good'
+    comment: 'The answer accurately addresses the question.'
+    pros: 'The answer is well-supported by evidence and logical reasoning.'
+    cons: 'No errors or inaccuracies were detected.'
+  usefulness_and_comprehensiveness:
+    score: 'good'
+    comment: 'The answer provides a thorough and well-rounded response.'
+    pros: 'The answer covers all aspects of the question and provides additional context.'
+    cons: 'No important information is missing.'
+  human_interpretability:
+    score: 'good'
+    comment: 'The answer is clear and easy to understand.'
+    pros: 'The language is concise and free of technical jargon.'
+    cons: 'No confusing or ambiguous statements were detected.'
+  consideration_of_causality:
+    score: 'moderate'
+    comment: 'The answer touches on causal relationships but could be more explicit.'
+    pros: 'The answer mentions potential causes and effects.'
+    cons: 'Causal relationships could be more clearly defined.'
+  consideration_of_toxicity_and_holistic_interdisciplinary_evidence:
+    score: 'bad'
+    comment: 'The answer lacks consideration of toxicity and interdisciplinary evidence.'
+    pros: 'None'
+    cons: 'Toxicity and interdisciplinary evidence are not discussed.'
+  consideration_of_standardized_ways_of_analysis_and_reporting:
+    score: 'good'
+    comment: 'The answer follows established methods and reporting guidelines.'
+    pros: 'The answer adheres to standardized protocols and reporting standards.'
+    cons: 'No deviations from established methods were detected.'
+  longitudinal_data:
+    score: 'moderate'
+    comment: 'The answer mentions longitudinal data but could provide more detail.'
+    pros: 'The answer acknowledges the importance of longitudinal data.'
+    cons: 'More specific examples or analysis of longitudinal data would strengthen the answer.'
+  consideration_of_known_aging_biology:
+    score: 'good'
+    comment: 'The answer demonstrates a clear understanding of aging biology.'
+    pros: 'The answer accurately applies principles of aging biology.'
+    cons: 'No inaccuracies or misunderstandings were detected.'
+  general_evaluation:
+    score: 'good'
+    comment: 'The answer is well-researched and effectively addresses the question.'
+    pros: 'The answer is comprehensive, well-organized, and easy to understand.'
+    cons: 'Some areas, such as consideration of toxicity, could be improved.'

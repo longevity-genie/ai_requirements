@@ -1,0 +1,13 @@
+filename	causality	correctness	general_evaluation	human_interpretability	known_aging_biology	longitudinal_data	standardized_ways_of_analysis_and_reporting	toxicity_and_holistic_interdisciplinary_evidence	usefulness_and_comprehensiveness
+evaluation_gpt_4_turbo_no_requirements_llama3-70b-8192	moderate	good	good	good	bad	bad	bad	moderate	good
+evaluation_claude_opus_no_requirements_claude-3-opus-20240229	moderate	good	good	good	moderate	bad	good	moderate	good
+evaluation_gpt_4_turbo_all_requirements_gpt-4-turbo	moderate	good	good	good	moderate	moderate	moderate	good	good
+evaluation_claude_opus_no_requirements_llama3-70b-8192	moderate	good	good	good	bad	bad	good	moderate	good
+evaluation_claude_opus_no_requirements_gpt-4-turbo	moderate	good	good	good	moderate	moderate	good	good	good
+evaluation_gpt_4_turbo_no_requirements_gpt-4-turbo	moderate	good	good	good	moderate	moderate	good	moderate	good
+evaluation_gpt_4_turbo_all_requirements_llama3-70b-8192	moderate	good	good	good	moderate	bad	bad	moderate	good
+evaluation_gpt_4_turbo_all_requirements_claude-3-opus-20240229	moderate	good	moderate	good	bad	bad	moderate	good	good
+evaluation_gpt_4_turbo_no_requirements_claude-3-opus-20240229	moderate	good	moderate	good	bad	bad	bad	moderate	moderate
+evaluation_claude_opus_all_requirements_gpt-4-turbo	moderate	good	good	good	moderate	bad	moderate	good	good
+evaluation_claude_opus_all_requirements_claude-3-opus-20240229	moderate	moderate	moderate	good	bad	bad	moderate	good	good
+evaluation_claude_opus_all_requirements_llama3-70b-8192	moderate	good	good	good	bad	bad	moderate	good	good
